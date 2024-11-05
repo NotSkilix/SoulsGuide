@@ -1,0 +1,25 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[0,0],
+"boss_8h_source.html":[1,0,0,0],
+"class_boss.html":[0,0,0],
+"class_enemy.html":[0,0,1],
+"class_flag.html":[0,0,2],
+"class_game_window.html":[0,0,3],
+"class_platform.html":[0,0,4],
+"class_player.html":[0,0,5],
+"class_trap.html":[0,0,6],
+"classes.html":[0,1],
+"dir_b1617d756d2224e91d37255e84e89ba2.html":[1,0,0],
+"enemy_8h_source.html":[1,0,0,1],
+"files.html":[1,0],
+"flag_8h_source.html":[1,0,0,2],
+"gamewindow_8h_source.html":[1,0,0,3],
+"hierarchy.html":[0,2],
+"index.html":[],
+"pages.html":[],
+"platform_8h_source.html":[1,0,0,4],
+"player_8h_source.html":[1,0,0,5],
+"trap_8h_source.html":[1,0,0,6],
+"type_def_8h_source.html":[1,0,0,7]
+};

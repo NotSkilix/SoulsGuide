@@ -1,0 +1,330 @@
+\doxysection{Game\+Window Class Reference}
+\hypertarget{class_game_window}{}\label{class_game_window}\index{GameWindow@{GameWindow}}
+
+
+The \doxylink{class_game_window}{Game\+Window} class is the view and controller of the game. It display the level\textquotesingle{}s elements and manages the control of the player.  
+
+
+
+
+{\ttfamily \#include $<$gamewindow.\+h$>$}
+
+Inheritance diagram for Game\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game_window}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_window_ac3eeb92ff59cb36fd579f290013db4d5}{Game\+Window}} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\begin{DoxyCompactList}\small\item\em The constructor to initialize a \doxylink{class_game}{Game} window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_window_a55b071c0390e45c064a160c1e6baaa08}{\texorpdfstring{$\sim$}{\string~}\+Game\+Window}} ()
+\begin{DoxyCompactList}\small\item\em The destructor of the \doxylink{class_game_window}{Game\+Window} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_window_a1e813e96af8244e8d649c5c9e7d9f1cf}{background\+And\+Music\+Error}} (const exception \&e)
+\begin{DoxyCompactList}\small\item\em Catches an exception sent as a parameter in a function that tries to run/read a background or music file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_window_a5f7c751cadb7a75591c8536a6d453ecd}{key\+Press\+Event}} (QKey\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em The event to manage when a key (Z, Q or D) is pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_window_a754f513e1d19c0619f1e7376d9c306bc}{key\+Release\+Event}} (QKey\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em The event to manage when a key (Q or D) is released. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_window_ae9ac06585e7939138309133516456b70}{mouse\+Press\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em The event to handle when the mouse is clicked. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_window_a8999f7dfffcac96d07843509077966b2}{mouse\+Release\+Event}} (QMouse\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em The event to manage when the mouse click is released. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_window_a89a60966c628d69566158981a8c2d463}{paint\+Event}} (QPaint\+Event \texorpdfstring{$\ast$}{*}event) override
+\begin{DoxyCompactList}\small\item\em The event to paint and display all the elements of the game (player, platforms, ...) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_window_a7b3eda624fdfbd383b156a797b64940b}{music\+And\+Background\+Loader}} (const int current\+Level)
+\begin{DoxyCompactList}\small\item\em The music reader for the \doxylink{class_game_window}{Game\+Window} class, read a music depending on the level sent in the parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_window_a22c1eb82e78b2a68aede14a1378bc708}{display\+Menu}} (interface an\+Interface)
+\begin{DoxyCompactList}\small\item\em Display the interface required to be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_window_a532b6661ecf794ea8f1a43c87947e437}{setup\+Interface}} (interface an\+Interface)
+\begin{DoxyCompactList}\small\item\em Realize actions to the buttons depending on the menu. Specific menu\+: create the required button and push\+\_\+back() to its\+Buttons vector new menu\+: delete the buttons stored in the vector to create new one for another menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_game_window}{Game\+Window} class is the view and controller of the game. It display the level\textquotesingle{}s elements and manages the control of the player. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_game_window_ac3eeb92ff59cb36fd579f290013db4d5}\index{GameWindow@{GameWindow}!GameWindow@{GameWindow}}
+\index{GameWindow@{GameWindow}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{GameWindow()}{GameWindow()}}
+{\footnotesize\ttfamily \label{class_game_window_ac3eeb92ff59cb36fd579f290013db4d5} 
+Game\+Window\+::\+Game\+Window (\begin{DoxyParamCaption}\item[{QWidget \texorpdfstring{$\ast$}{*}}]{parent}{ = {\ttfamily nullptr}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+The constructor to initialize a \doxylink{class_game}{Game} window. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em parent,type} & QWidget\texorpdfstring{$\ast$}{*} \+: the parent of the current widget \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_window_a55b071c0390e45c064a160c1e6baaa08}\index{GameWindow@{GameWindow}!````~GameWindow@{\texorpdfstring{$\sim$}{\string~}GameWindow}}
+\index{````~GameWindow@{\texorpdfstring{$\sim$}{\string~}GameWindow}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GameWindow()}{\string~GameWindow()}}
+{\footnotesize\ttfamily \label{class_game_window_a55b071c0390e45c064a160c1e6baaa08} 
+Game\+Window\+::\texorpdfstring{$\sim$}{\string~}\+Game\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The destructor of the \doxylink{class_game_window}{Game\+Window} class. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_window_a1e813e96af8244e8d649c5c9e7d9f1cf}\index{GameWindow@{GameWindow}!backgroundAndMusicError@{backgroundAndMusicError}}
+\index{backgroundAndMusicError@{backgroundAndMusicError}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{backgroundAndMusicError()}{backgroundAndMusicError()}}
+{\footnotesize\ttfamily \label{class_game_window_a1e813e96af8244e8d649c5c9e7d9f1cf} 
+void Game\+Window\+::background\+And\+Music\+Error (\begin{DoxyParamCaption}\item[{const exception \&}]{e}{}\end{DoxyParamCaption})}
+
+
+
+Catches an exception sent as a parameter in a function that tries to run/read a background or music file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em an} & exception sent from a try catch function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+GOBBE Paul 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+11/06/2024 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+Version 1 
+\end{DoxyVersion}
+\Hypertarget{class_game_window_a22c1eb82e78b2a68aede14a1378bc708}\index{GameWindow@{GameWindow}!displayMenu@{displayMenu}}
+\index{displayMenu@{displayMenu}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{displayMenu()}{displayMenu()}}
+{\footnotesize\ttfamily \label{class_game_window_a22c1eb82e78b2a68aede14a1378bc708} 
+void Game\+Window\+::display\+Menu (\begin{DoxyParamCaption}\item[{interface}]{an\+Interface}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Display the interface required to be displayed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & required interface (enum) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+8 June 2024 
+\end{DoxyDate}
+\Hypertarget{class_game_window_a5f7c751cadb7a75591c8536a6d453ecd}\index{GameWindow@{GameWindow}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily \label{class_game_window_a5f7c751cadb7a75591c8536a6d453ecd} 
+void Game\+Window\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+The event to manage when a key (Z, Q or D) is pressed. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em event,type} & QKey\+Event\texorpdfstring{$\ast$}{*} \+: an event who contains information about the key press \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_window_a754f513e1d19c0619f1e7376d9c306bc}\index{GameWindow@{GameWindow}!keyReleaseEvent@{keyReleaseEvent}}
+\index{keyReleaseEvent@{keyReleaseEvent}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{keyReleaseEvent()}{keyReleaseEvent()}}
+{\footnotesize\ttfamily \label{class_game_window_a754f513e1d19c0619f1e7376d9c306bc} 
+void Game\+Window\+::key\+Release\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+The event to manage when a key (Q or D) is released. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em event,type} & QKey\+Event\texorpdfstring{$\ast$}{*} \+: an event who contains information about the key release \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_window_ae9ac06585e7939138309133516456b70}\index{GameWindow@{GameWindow}!mousePressEvent@{mousePressEvent}}
+\index{mousePressEvent@{mousePressEvent}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{mousePressEvent()}{mousePressEvent()}}
+{\footnotesize\ttfamily \label{class_game_window_ae9ac06585e7939138309133516456b70} 
+void Game\+Window\+::mouse\+Press\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+The event to handle when the mouse is clicked. 
+
+\begin{DoxyAuthor}{Author}
+GOBBE Paul 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+10 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em event,type} & QKey\+Event\texorpdfstring{$\ast$}{*} \+: an event who contains information about the mouse click \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_window_a8999f7dfffcac96d07843509077966b2}\index{GameWindow@{GameWindow}!mouseReleaseEvent@{mouseReleaseEvent}}
+\index{mouseReleaseEvent@{mouseReleaseEvent}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{mouseReleaseEvent()}{mouseReleaseEvent()}}
+{\footnotesize\ttfamily \label{class_game_window_a8999f7dfffcac96d07843509077966b2} 
+void Game\+Window\+::mouse\+Release\+Event (\begin{DoxyParamCaption}\item[{QMouse\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+The event to manage when the mouse click is released. 
+
+\begin{DoxyAuthor}{Author}
+GOBBE Paul 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+10 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em event,type} & QKey\+Event\texorpdfstring{$\ast$}{*} \+: an event who contains information about the mouse click \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_window_a7b3eda624fdfbd383b156a797b64940b}\index{GameWindow@{GameWindow}!musicAndBackgroundLoader@{musicAndBackgroundLoader}}
+\index{musicAndBackgroundLoader@{musicAndBackgroundLoader}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{musicAndBackgroundLoader()}{musicAndBackgroundLoader()}}
+{\footnotesize\ttfamily \label{class_game_window_a7b3eda624fdfbd383b156a797b64940b} 
+void Game\+Window\+::music\+And\+Background\+Loader (\begin{DoxyParamCaption}\item[{const int}]{current\+Level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The music reader for the \doxylink{class_game_window}{Game\+Window} class, read a music depending on the level sent in the parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & current level in the game. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6 June 2024 
+\end{DoxyDate}
+\Hypertarget{class_game_window_a89a60966c628d69566158981a8c2d463}\index{GameWindow@{GameWindow}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily \label{class_game_window_a89a60966c628d69566158981a8c2d463} 
+void Game\+Window\+::paint\+Event (\begin{DoxyParamCaption}\item[{QPaint\+Event \texorpdfstring{$\ast$}{*}}]{event}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+The event to paint and display all the elements of the game (player, platforms, ...) 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em event,type} & QPaint\+Event\texorpdfstring{$\ast$}{*} \+: an event who can paint element such as rectangle for example \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_game_window_a532b6661ecf794ea8f1a43c87947e437}\index{GameWindow@{GameWindow}!setupInterface@{setupInterface}}
+\index{setupInterface@{setupInterface}!GameWindow@{GameWindow}}
+\doxysubsubsection{\texorpdfstring{setupInterface()}{setupInterface()}}
+{\footnotesize\ttfamily \label{class_game_window_a532b6661ecf794ea8f1a43c87947e437} 
+void Game\+Window\+::setup\+Interface (\begin{DoxyParamCaption}\item[{interface}]{an\+Interface}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Realize actions to the buttons depending on the menu. Specific menu\+: create the required button and push\+\_\+back() to its\+Buttons vector new menu\+: delete the buttons stored in the vector to create new one for another menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & required interface (enum) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+8 June 2024 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+App/gamewindow.\+h\item 
+App/gamewindow.\+cpp\end{DoxyCompactItemize}

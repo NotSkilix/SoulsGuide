@@ -1,0 +1,42 @@
+\doxysection{powerup.\+h}
+\hypertarget{powerup_8h_source}{}\label{powerup_8h_source}\index{App/powerup.h@{App/powerup.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ POWERUP\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ POWERUP\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <typeDef.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QRect>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QPoint>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_power_up}{PowerUp}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ QVector<QPixmap>\ itsSprites;}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00021\ \ \ \ \ QRect\ itsRect;}
+\DoxyCodeLine{00022\ \ \ \ \ PowerUpType\ itsType;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_power_up_ae840232e4d8b72b4b17c58cf8c472a35}{PowerUp}}(\textcolor{keyword}{const}\ QPoint\&\ coordinate,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ PowerUpType\ type);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_power_up_ae840232e4d8b72b4b17c58cf8c472a35}{PowerUp}}(\textcolor{keyword}{const}\ QPoint\&\ coordinate,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ \textcolor{keyword}{const}\ std::string\&\ typeStr);}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_power_up_a353053fe27c5a148a2fcd4f5f45e19af}{\string~PowerUp}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_power_up_a958fcfbcf8cfc8b48f127e82778d5fc9}{updatePowerUpRelativePosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{bool}\ isColliding);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00070\ \ \ \ \ QRect\ \mbox{\hyperlink{class_power_up_ad557f1ee07769a5ac0f1089f1e37efa6}{getItsRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00079\ \ \ \ \ PowerUpType\ \mbox{\hyperlink{class_power_up_ad6f747257d69bce5490f502470629ace}{getItsPowerUpType}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00089\ \ \ \ \ QPixmap\ \mbox{\hyperlink{class_power_up_a5695a4dadbb52e28f68f5a6a2e7230d8}{getItsSprite}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_power_up_a768f47307c2f2796aa6ab12149b1c8a1}{setItsRect}}(\textcolor{keyword}{const}\ QRect\&\ newRect);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_power_up_aa48064661b720036e8ae4f70d057f52a}{setItsPowerUpType}}(PowerUpType\ newType);}
+\DoxyCodeLine{00108\ \};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00111\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ POWERUP\_H}}
+
+\end{DoxyCode}

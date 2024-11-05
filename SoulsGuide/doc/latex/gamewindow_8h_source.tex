@@ -1,0 +1,85 @@
+\doxysection{gamewindow.\+h}
+\hypertarget{gamewindow_8h_source}{}\label{gamewindow_8h_source}\index{App/gamewindow.h@{App/gamewindow.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GAMEWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GAMEWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QMediaPlayer>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QAudioOutput>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QGridLayout>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QMovie>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QLayoutItem>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}game.h"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}typeDef.h"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}gamebossfight.h"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_window}{GameWindow}}\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_game_window_ac3eeb92ff59cb36fd579f290013db4d5}{GameWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_game_window_a55b071c0390e45c064a160c1e6baaa08}{\string~GameWindow}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_window_a1e813e96af8244e8d649c5c9e7d9f1cf}{backgroundAndMusicError}}(\textcolor{keyword}{const}\ exception\ \&e);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_window_a5f7c751cadb7a75591c8536a6d453ecd}{keyPressEvent}}(QKeyEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_window_a754f513e1d19c0619f1e7376d9c306bc}{keyReleaseEvent}}(QKeyEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_window_ae9ac06585e7939138309133516456b70}{mousePressEvent}}(QMouseEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_window_a8999f7dfffcac96d07843509077966b2}{mouseReleaseEvent}}(QMouseEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_window_a89a60966c628d69566158981a8c2d463}{paintEvent}}(QPaintEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_window_a7b3eda624fdfbd383b156a797b64940b}{musicAndBackgroundLoader}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ currentLevel);}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_window_a22c1eb82e78b2a68aede14a1378bc708}{displayMenu}}(interface\ anInterface);}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_window_a532b6661ecf794ea8f1a43c87947e437}{setupInterface}}(interface\ anInterface);}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordtype}{void}\ updateTimer();}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{void}\ animationsManager();}
+\DoxyCodeLine{00150\ \ \ \ \ \textcolor{keywordtype}{void}\ musicStatusChanged(QMediaPlayer::MediaStatus\ currentStatus);}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ levelUpdate();}
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordtype}{void}\ playGame();}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordtype}{void}\ closeGame();}
+\DoxyCodeLine{00178\ \ \ \ \ \textcolor{keywordtype}{void}\ mainMenu();}
+\DoxyCodeLine{00185\ \ \ \ \ \textcolor{keywordtype}{void}\ displayLeaderBoard();}
+\DoxyCodeLine{00192\ \ \ \ \ \textcolor{keywordtype}{void}\ playerStatusUpdate();}
+\DoxyCodeLine{00199\ \ \ \ \ \textcolor{keywordtype}{void}\ resumeGame();}
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{void}\ playAgain();}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00208\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00215\ \ \ \ \ \textcolor{keywordtype}{void}\ clearScreen();}
+\DoxyCodeLine{00216\ }
+\DoxyCodeLine{00217\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00219\ \ \ \ \ \mbox{\hyperlink{class_game}{Game}}\ *\ itsGame;}
+\DoxyCodeLine{00221\ \ \ \ \ QTimer\ *\ itsTimer;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Timer\ for\ the\ game\ loop}}
+\DoxyCodeLine{00223\ \ \ \ \ QTimer\ *\ itsAnimationTimer;}
+\DoxyCodeLine{00225\ \ \ \ \ QPixmap\ itsBackground;\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ QPixmap\ for\ the\ backgrounds\ of\ the\ levels}}
+\DoxyCodeLine{00227\ \ \ \ \ QMediaPlayer\ *\ itsMusicPlayer;}
+\DoxyCodeLine{00229\ \ \ \ \ QAudioOutput\ *\ itsAudio;}
+\DoxyCodeLine{00231\ \ \ \ \ QLabel\ *itsTimerLabel;}
+\DoxyCodeLine{00233\ \ \ \ \ \textcolor{keywordtype}{int}\ itsMusicPlaying;}
+\DoxyCodeLine{00235\ \ \ \ \ \textcolor{keyword}{interface\ }itsCurrentInterface;}
+\DoxyCodeLine{00237\ \ \ \ \ QPushButton\ *\ itsFirstButton;}
+\DoxyCodeLine{00239\ \ \ \ \ QPushButton\ *\ itsSecondButton;}
+\DoxyCodeLine{00241\ \ \ \ \ QPushButton\ *\ itsThirdButton;}
+\DoxyCodeLine{00243\ \ \ \ \ QGridLayout\ *\ itsGrid;}
+\DoxyCodeLine{00245\ \ \ \ \ QLabel\ *\ itsLabel;}
+\DoxyCodeLine{00247\ \ \ \ \ QLineEdit\ *\ itsLineEdit;}
+\DoxyCodeLine{00249\ \ \ \ \ QMovie\ *\ itsBackgroundGif;}
+\DoxyCodeLine{00251\ \ \ \ \ QLabel\ *\ itsMovieStorage;}
+\DoxyCodeLine{00253\ \ \ \ \ QLabel\ *\ itsIndicationLabel;}
+\DoxyCodeLine{00255\ \ \ \ \ QLabel\ *\ itsArmorCount;}
+\DoxyCodeLine{00257\ \ \ \ \ QLabel\ *\ itsGoldenBuffCount;}
+\DoxyCodeLine{00258\ \};}
+\DoxyCodeLine{00259\ }
+\DoxyCodeLine{00260\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GAMEWINDOW\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,418 @@
+\doxysection{Boss Class Reference}
+\hypertarget{class_boss}{}\label{class_boss}\index{Boss@{Boss}}
+
+
+The \doxylink{class_boss}{Boss} class implements the game\textquotesingle{}s \doxylink{class_boss}{Boss} entity and describes its behavior.  
+
+
+
+
+{\ttfamily \#include $<$boss.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_boss_a6a6034e9d88ba56fd4d7c08129448f61}{Boss}} (\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}a\+Player, QPoint spawn\+Point, int boss\+Width, int boss\+Height, int speed)
+\begin{DoxyCompactList}\small\item\em The constructor to create a \doxylink{class_boss}{Boss}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_boss_ae2300fbed7e29873d66c5a89beb3a628}{\texorpdfstring{$\sim$}{\string~}\+Boss}} ()
+\begin{DoxyCompactList}\small\item\em The destructor to delete a \doxylink{class_boss}{Boss}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_a29a62ff56a1deded82be0734aa524577}{set\+Its\+Speed}} (int speed)
+\begin{DoxyCompactList}\small\item\em This method change the value of the speed of the \doxylink{class_boss}{Boss}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_a7e490482373a34344d1e6c09dfef419d}{move}} ()
+\begin{DoxyCompactList}\small\item\em This method takes the player\textquotesingle{}s coordinates and then moves in that direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_ac584361d823e9b85014a09b05529a40b}{update\+Boss\+Relative\+Position}} (int x, bool is\+Colliding)
+\begin{DoxyCompactList}\small\item\em This method update the \doxylink{class_boss}{Boss} position in the game relative to player movement. \end{DoxyCompactList}\item 
+QPoint \mbox{\hyperlink{class_boss_aa6324a9b05690902eaed7ccb8025ab47}{get\+Its\+Position}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Position value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_boss_aa5ca0a52710f103ac6ca0b40d1c4bf49}{get\+Its\+Health\+Point}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Health\+Point value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_a93b463179004e4d4784ab48c0e812268}{set\+Its\+Health\+Point}} (const int new\+Hp)
+\begin{DoxyCompactList}\small\item\em This sets the its\+Health\+Point value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_boss_a74dcb54106e6c1c7648ec27fc95ded7e}{get\+Its\+Iframes}} () const
+\begin{DoxyCompactList}\small\item\em This method returns the its\+Iframes value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_acd06b38df216076a8967b23353c6a1a6}{set\+Its\+Iframes}} (const int new\+Val)
+\begin{DoxyCompactList}\small\item\em This sets the its\+Iframes value. \end{DoxyCompactList}\item 
+QRect \mbox{\hyperlink{class_boss_a99e154b3d16cbb519dbe8f401cd5f688}{get\+Its\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Rect value (its\+Rect represent the hitbox of the \doxylink{class_boss}{Boss}) \end{DoxyCompactList}\item 
+QPixmap \mbox{\hyperlink{class_boss_ac9bb409e93c82c17d44c7b1ce03834ee}{get\+Its\+Sprite}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Sprite value. \end{DoxyCompactList}\item 
+QRect \mbox{\hyperlink{class_boss_afa2fa1d1c1fa637a7d8f245e41c7e37d}{get\+Its\+Hitbox}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Hitbox value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_abe6944df79e66e8a9ffcf48f092e9411}{set\+Its\+Hitbox}} (QRect new\+Hitbox)
+\begin{DoxyCompactList}\small\item\em Setter of its\+Hitbox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_boss_a7721befc776a159721db1adb34c69de7}{boss\+Fight\+Move}} (QPoint a\+Position)
+\begin{DoxyCompactList}\small\item\em Change the boss movements and delay the position of the player to allow a fair fight and increase his chances of survival on the boss fight. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_boss}{Boss} class implements the game\textquotesingle{}s \doxylink{class_boss}{Boss} entity and describes its behavior. 
+
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_boss_a6a6034e9d88ba56fd4d7c08129448f61}\index{Boss@{Boss}!Boss@{Boss}}
+\index{Boss@{Boss}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{Boss()}{Boss()}}
+{\footnotesize\ttfamily \label{class_boss_a6a6034e9d88ba56fd4d7c08129448f61} 
+Boss\+::\+Boss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}} \texorpdfstring{$\ast$}{*}}]{a\+Player}{, }\item[{QPoint}]{spawn\+Point}{, }\item[{int}]{boss\+Width}{, }\item[{int}]{boss\+Height}{, }\item[{int}]{speed}{}\end{DoxyParamCaption})}
+
+
+
+The constructor to create a \doxylink{class_boss}{Boss}. 
+
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Player,type} & Player\texorpdfstring{$\ast$}{*} \+: the \doxylink{class_player}{Player} in the game \\
+\hline
+{\em spawn\+Point,type} & QPoint \+: the point where the \doxylink{class_boss}{Boss} appears \\
+\hline
+{\em boss\+Width,type} & int \+: the width of the boss (use \doxylink{type_def_8h_source}{type\+Def.\+h} to define) \\
+\hline
+{\em boss\+Height,type} & int \+: the height of the boss (use \doxylink{type_def_8h_source}{type\+Def.\+h} to define) \\
+\hline
+{\em speed,type} & int\+: the boss speed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_boss_ae2300fbed7e29873d66c5a89beb3a628}\index{Boss@{Boss}!````~Boss@{\texorpdfstring{$\sim$}{\string~}Boss}}
+\index{````~Boss@{\texorpdfstring{$\sim$}{\string~}Boss}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Boss()}{\string~Boss()}}
+{\footnotesize\ttfamily \label{class_boss_ae2300fbed7e29873d66c5a89beb3a628} 
+Boss\+::\texorpdfstring{$\sim$}{\string~}\+Boss (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The destructor to delete a \doxylink{class_boss}{Boss}. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_boss_a7721befc776a159721db1adb34c69de7}\index{Boss@{Boss}!bossFightMove@{bossFightMove}}
+\index{bossFightMove@{bossFightMove}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{bossFightMove()}{bossFightMove()}}
+{\footnotesize\ttfamily \label{class_boss_a7721befc776a159721db1adb34c69de7} 
+void Boss\+::boss\+Fight\+Move (\begin{DoxyParamCaption}\item[{QPoint}]{a\+Position}{}\end{DoxyParamCaption})}
+
+
+
+Change the boss movements and delay the position of the player to allow a fair fight and increase his chances of survival on the boss fight. 
+
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+11 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Position,type} & QPoint \+: the delayed position of the player \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_boss_aa5ca0a52710f103ac6ca0b40d1c4bf49}\index{Boss@{Boss}!getItsHealthPoint@{getItsHealthPoint}}
+\index{getItsHealthPoint@{getItsHealthPoint}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{getItsHealthPoint()}{getItsHealthPoint()}}
+{\footnotesize\ttfamily \label{class_boss_aa5ca0a52710f103ac6ca0b40d1c4bf49} 
+int Boss\+::get\+Its\+Health\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Health\+Point value. 
+
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Health\+Point, type int \+: the health point of the \doxylink{class_boss}{Boss} 
+\end{DoxyReturn}
+\Hypertarget{class_boss_afa2fa1d1c1fa637a7d8f245e41c7e37d}\index{Boss@{Boss}!getItsHitbox@{getItsHitbox}}
+\index{getItsHitbox@{getItsHitbox}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{getItsHitbox()}{getItsHitbox()}}
+{\footnotesize\ttfamily \label{class_boss_afa2fa1d1c1fa637a7d8f245e41c7e37d} 
+QRect Boss\+::get\+Its\+Hitbox (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Hitbox value. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Hitbox, type QRect \+: the hitbox of the \doxylink{class_boss}{Boss} 
+\end{DoxyReturn}
+\Hypertarget{class_boss_a74dcb54106e6c1c7648ec27fc95ded7e}\index{Boss@{Boss}!getItsIframes@{getItsIframes}}
+\index{getItsIframes@{getItsIframes}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{getItsIframes()}{getItsIframes()}}
+{\footnotesize\ttfamily \label{class_boss_a74dcb54106e6c1c7648ec27fc95ded7e} 
+int Boss\+::get\+Its\+Iframes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method returns the its\+Iframes value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Iframes, type int \+: the iframe timer of the \doxylink{class_boss}{Boss} 
+\end{DoxyReturn}
+\Hypertarget{class_boss_aa6324a9b05690902eaed7ccb8025ab47}\index{Boss@{Boss}!getItsPosition@{getItsPosition}}
+\index{getItsPosition@{getItsPosition}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{getItsPosition()}{getItsPosition()}}
+{\footnotesize\ttfamily \label{class_boss_aa6324a9b05690902eaed7ccb8025ab47} 
+QPoint Boss\+::get\+Its\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Position value. 
+
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Position, type QPoint \+: the position of the \doxylink{class_boss}{Boss} 
+\end{DoxyReturn}
+\Hypertarget{class_boss_a99e154b3d16cbb519dbe8f401cd5f688}\index{Boss@{Boss}!getItsRect@{getItsRect}}
+\index{getItsRect@{getItsRect}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{getItsRect()}{getItsRect()}}
+{\footnotesize\ttfamily \label{class_boss_a99e154b3d16cbb519dbe8f401cd5f688} 
+QRect Boss\+::get\+Its\+Rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Rect value (its\+Rect represent the hitbox of the \doxylink{class_boss}{Boss}) 
+
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Rect, type int \+: the hitbox of the \doxylink{class_boss}{Boss} 
+\end{DoxyReturn}
+\Hypertarget{class_boss_ac9bb409e93c82c17d44c7b1ce03834ee}\index{Boss@{Boss}!getItsSprite@{getItsSprite}}
+\index{getItsSprite@{getItsSprite}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{getItsSprite()}{getItsSprite()}}
+{\footnotesize\ttfamily \label{class_boss_ac9bb409e93c82c17d44c7b1ce03834ee} 
+QPixmap Boss\+::get\+Its\+Sprite (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Sprite value. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Sprite, type QPixmap \+: the sprite of the \doxylink{class_boss}{Boss} 
+\end{DoxyReturn}
+\Hypertarget{class_boss_a7e490482373a34344d1e6c09dfef419d}\index{Boss@{Boss}!move@{move}}
+\index{move@{move}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily \label{class_boss_a7e490482373a34344d1e6c09dfef419d} 
+void Boss\+::move (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+This method takes the player\textquotesingle{}s coordinates and then moves in that direction. 
+
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\Hypertarget{class_boss_a93b463179004e4d4784ab48c0e812268}\index{Boss@{Boss}!setItsHealthPoint@{setItsHealthPoint}}
+\index{setItsHealthPoint@{setItsHealthPoint}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{setItsHealthPoint()}{setItsHealthPoint()}}
+{\footnotesize\ttfamily \label{class_boss_a93b463179004e4d4784ab48c0e812268} 
+void Boss\+::set\+Its\+Health\+Point (\begin{DoxyParamCaption}\item[{const int}]{new\+Hp}{}\end{DoxyParamCaption})}
+
+
+
+This sets the its\+Health\+Point value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Hp,type} & int \+: the new health point of the \doxylink{class_boss}{Boss} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_boss_abe6944df79e66e8a9ffcf48f092e9411}\index{Boss@{Boss}!setItsHitbox@{setItsHitbox}}
+\index{setItsHitbox@{setItsHitbox}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{setItsHitbox()}{setItsHitbox()}}
+{\footnotesize\ttfamily \label{class_boss_abe6944df79e66e8a9ffcf48f092e9411} 
+void Boss\+::set\+Its\+Hitbox (\begin{DoxyParamCaption}\item[{QRect}]{new\+Hitbox}{}\end{DoxyParamCaption})}
+
+
+
+Setter of its\+Hitbox. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Hitbox,type} & QRect \+: the new hitbox ofthe boss \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_boss_acd06b38df216076a8967b23353c6a1a6}\index{Boss@{Boss}!setItsIframes@{setItsIframes}}
+\index{setItsIframes@{setItsIframes}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{setItsIframes()}{setItsIframes()}}
+{\footnotesize\ttfamily \label{class_boss_acd06b38df216076a8967b23353c6a1a6} 
+void Boss\+::set\+Its\+Iframes (\begin{DoxyParamCaption}\item[{const int}]{new\+Val}{}\end{DoxyParamCaption})}
+
+
+
+This sets the its\+Iframes value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Val,type} & int \+: the new i\+Frames value of the \doxylink{class_boss}{Boss} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_boss_a29a62ff56a1deded82be0734aa524577}\index{Boss@{Boss}!setItsSpeed@{setItsSpeed}}
+\index{setItsSpeed@{setItsSpeed}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{setItsSpeed()}{setItsSpeed()}}
+{\footnotesize\ttfamily \label{class_boss_a29a62ff56a1deded82be0734aa524577} 
+void Boss\+::set\+Its\+Speed (\begin{DoxyParamCaption}\item[{int}]{speed}{}\end{DoxyParamCaption})}
+
+
+
+This method change the value of the speed of the \doxylink{class_boss}{Boss}. 
+
+\begin{DoxyAuthor}{Author}
+BOURDY Axel 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em speed,type} & int \+: The speed value of the \doxylink{class_boss}{Boss} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_boss_ac584361d823e9b85014a09b05529a40b}\index{Boss@{Boss}!updateBossRelativePosition@{updateBossRelativePosition}}
+\index{updateBossRelativePosition@{updateBossRelativePosition}!Boss@{Boss}}
+\doxysubsubsection{\texorpdfstring{updateBossRelativePosition()}{updateBossRelativePosition()}}
+{\footnotesize\ttfamily \label{class_boss_ac584361d823e9b85014a09b05529a40b} 
+void Boss\+::update\+Boss\+Relative\+Position (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{bool}]{is\+Colliding}{}\end{DoxyParamCaption})}
+
+
+
+This method update the \doxylink{class_boss}{Boss} position in the game relative to player movement. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x,type} & int \+: The direction \\
+\hline
+{\em is\+Colliding,type} & bool \+: If the player collides with a platform \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+App/boss.\+h\item 
+App/boss.\+cpp\end{DoxyCompactItemize}

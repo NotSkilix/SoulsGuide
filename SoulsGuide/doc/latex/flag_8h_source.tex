@@ -1,0 +1,43 @@
+\doxysection{flag.\+h}
+\hypertarget{flag_8h_source}{}\label{flag_8h_source}\index{App/flag.h@{App/flag.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FLAG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FLAG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QPoint>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QRect>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_flag}{Flag}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{class_flag_a50b074239c14091f2a0dc1f52f9ed230}{Flag}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_flag_a0f8f181d049036f54b5609bc646e2960}{\string~Flag}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{class_flag_a50b074239c14091f2a0dc1f52f9ed230}{Flag}}(\textcolor{keyword}{const}\ QPoint\&\ initialPosition,\ \textcolor{keywordtype}{int}\ initialSize);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{comment}{//\ Getters}}
+\DoxyCodeLine{00050\ \ \ \ \ QPoint\ \mbox{\hyperlink{class_flag_a3433ce5a63ede2518b006a593f6bbc6b}{getItsPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_flag_a5ebf45059c78ac0315cd52331bce8d1e}{getItsSize}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00067\ \ \ \ \ QRect\ \mbox{\hyperlink{class_flag_a440db31773cf6068b8459f63f2007a7e}{getItsRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ \ \ \ \ QPixmap\ \mbox{\hyperlink{class_flag_acf6b60564c3db0677c8d5b3b5f3210c9}{getItsSprite}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{comment}{//\ Setters}}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flag_a62308dcf652a9e26a10e2ab2e8de253c}{setItsPosition}}(\textcolor{keyword}{const}\ QPoint\&\ newPosition);}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flag_a11ec7c2579622abc51e5adb1a7a9ee98}{setItsSize}}(\textcolor{keywordtype}{int}\ newSize);}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flag_ae7be2d0ac29c89aa00a50d651eeaa370}{setItsRect}}(\textcolor{keyword}{const}\ QRect\&\ newRect);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{comment}{//change\ the\ position\ of\ the\ traps\ when\ the\ player\ is\ theoritically\ moving}}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flag_a163dad37db3325d26485f49c9ffcc8f3}{updateFlagRelativePosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{bool}\ isColliding);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{comment}{//\ Flag\ is\ a\ square,\ the\ QPoint\ called\ position\ serves\ as\ the\ center\ of\ the\ square}}
+\DoxyCodeLine{00119\ \ \ \ \ QPoint\ itsPosition;}
+\DoxyCodeLine{00121\ \ \ \ \ QRect\ itsRect;}
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{keywordtype}{int}\ itsSize;}
+\DoxyCodeLine{00125\ \ \ \ \ QVector<QPixmap>\ itsSprites;}
+\DoxyCodeLine{00126\ \};}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00128\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FLAG\_H}}
+
+\end{DoxyCode}

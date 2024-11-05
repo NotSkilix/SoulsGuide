@@ -1,0 +1,38 @@
+\doxysection{platform.\+h}
+\hypertarget{platform_8h_source}{}\label{platform_8h_source}\index{App/platform.h@{App/platform.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PLATFORM\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PLATFORM\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QRect>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <qdebug.h>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_platform}{Platform}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00019\ \ \ \ \ QRect\ itsRect;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Stores\ the\ position\ and\ size\ of\ the\ platform\ all\ in\ single\ rectangle}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ isBreakable;\ \ \ \textcolor{comment}{//\ Flag\ to\ determine\ if\ the\ platform\ is\ breakable\ or\ not\ (not\ by\ default)}}
+\DoxyCodeLine{00023\ \ \ \ \ QVector<QPixmap>\ itsSprites;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_platform_a53b6c0241a2283adee19be101e8ad5a5}{Platform}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_platform_a13b5e4ef946b8a2fe38d22014145ab68}{\string~Platform}}();}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_platform_ae11105a7de8b305b2c318bbcd1580617}{updatePlatformRelativePosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{bool}\ isColliding);}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_platform_a1156e3398b48cef843b0a89980ce6a0f}{loadSprites}}(\textcolor{keywordtype}{int}\ currentLevel);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{comment}{//\ getters}}
+\DoxyCodeLine{00072\ \ \ \ \ QRect\ \mbox{\hyperlink{class_platform_a2c3001808a4d2b9c450999183e1b7d0b}{getItsRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_platform_a171dab32abe740d9ceafe295642067a5}{getIsBreakable}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00089\ \ \ \ \ QPixmap\ \mbox{\hyperlink{class_platform_adc8bf655b6a332a00b6fc3c81a84bec3}{getItsSprite}}(\textcolor{keywordtype}{int}\ index)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{comment}{//\ setters}}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_platform_a8d505f668b4b2df34d9880ef818d4307}{setItsRect}}(\textcolor{keyword}{const}\ QRect\ \&newItsRect);}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_platform_a928d8c635c254fb61f2aed921b06694d}{setIsBreakable}}(\textcolor{keywordtype}{bool}\ newState);}
+\DoxyCodeLine{00108\ \};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PLATFORM\_H}}
+
+\end{DoxyCode}

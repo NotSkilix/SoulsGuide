@@ -1,0 +1,67 @@
+\doxysection{enemy.\+h}
+\hypertarget{enemy_8h_source}{}\label{enemy_8h_source}\index{App/enemy.h@{App/enemy.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#ifndef\ ENEMY\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#define\ ENEMY\_H}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QRect>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QPoint>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}typeDef.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_enemy}{Enemy}}\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ QRect\ itsRect;}
+\DoxyCodeLine{00023\ \ \ \ \ EnemyType\ itsType;}
+\DoxyCodeLine{00025\ \ \ \ \ QPoint\ itsFirstEndPoint;}
+\DoxyCodeLine{00027\ \ \ \ \ QPoint\ itsSecondEndPoint;}
+\DoxyCodeLine{00029\ \ \ \ \ QPoint\ itsCurrentTarget;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ itsSpeed;}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ isMovingToSecondPoint;}
+\DoxyCodeLine{00035\ \ \ \ \ QVector<Animation*>\ itsAnimations;}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{struct_frame}{Frame}}\ *\ itsCurrentFrame;}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ itsAnimationIndex\ =\ -\/1;}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{class_enemy_a750ef29492510276c9c9cb62c143a78c}{Enemy}}(\textcolor{keyword}{const}\ QRect\&\ initialRect,\ \textcolor{keyword}{const}\ QPoint\&\ startingPoint,\ \textcolor{keyword}{const}\ QPoint\&\ endingPoint,\ \textcolor{keywordtype}{int}\ moveSpeed,\ \textcolor{keywordtype}{int}\ type);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_enemy_ac0eec4755e28c02688065f9657150ac3}{\string~Enemy}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a43ef301c43078d09a142c1d342227e06}{updatePosition}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a4a3886bb1d92428baaeea3be5b4342fb}{moveTowards}}(\textcolor{keyword}{const}\ QPoint\&\ target);}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a68e39ce61b28db39a5da53b771fd05e3}{loadAnimation}}(QString\ animationName,\ \textcolor{keywordtype}{int}\ frameNumber);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a366c24e50883973b07b0b67aea65a581}{playAnimation}}();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{comment}{//\ Getters}}
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{struct_frame}{Frame}}\ *\ \mbox{\hyperlink{class_enemy_aa170a8225ede27fec7d6d9cbe194101a}{getItsCurrentFrame}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00115\ \ \ \ \ QRect\ \mbox{\hyperlink{class_enemy_a9343a73034156db358804afa61ffaba4}{getItsRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00123\ \ \ \ \ QPoint\ \mbox{\hyperlink{class_enemy_ae28423c0a40d64155c8f053b623f5ca3}{getItsFirstEndPoint}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00131\ \ \ \ \ QPoint\ \mbox{\hyperlink{class_enemy_ae4f9e5ba1fe5a0e8c39a3e2bce115aed}{getItsSecondEndPoint}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00139\ \ \ \ \ QPoint\ \mbox{\hyperlink{class_enemy_a6c6f4d521c877b9d22a33d4582198968}{getItsCurrentTarget}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enemy_a2b5952dbc4fbb47090667f2840b73d42}{getItsSpeed}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_enemy_af06be9c557993d7bc2a808c20865aeec}{getIsMovingToSecondPoint}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{comment}{//\ Setters}}
+\DoxyCodeLine{00165\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a202c67fcf876e0c3660a22f52cb3895b}{setItsRect}}(\textcolor{keyword}{const}\ QRect\&\ newRect);}
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_ad5c3f9575b16593e064b39a5f2a4fb24}{setItsFirstEndPoint}}(\textcolor{keyword}{const}\ QPoint\&\ aFirstEndPoint);}
+\DoxyCodeLine{00181\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a23ab28b4df96c7fd3d06f7e16a82a332}{setItsSecondEndPoint}}(\textcolor{keyword}{const}\ QPoint\&\ aSecondEndPoint);}
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a4e5038b42f2e34101af13cdcf494befd}{setItsCurrentTarget}}(\textcolor{keyword}{const}\ QPoint\&\ aTarget);}
+\DoxyCodeLine{00197\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a3e12d0a01126c100d877463ef06ac734}{setItsSpeed}}(\textcolor{keywordtype}{int}\ newSpeed);}
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_afdabd52c5273b17ab146312b1b6d5649}{setIsMovingToSecondPoint}}(\textcolor{keywordtype}{bool}\ newMovingToPoint2);}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00214\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_ab46df26691c5e4b44dcc07bf02921635}{setItsCurrentFrame}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enemy_a504cd06a1331dda27556369a01949225}{updateEnemyRelativePosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{bool}\ isColliding);}
+\DoxyCodeLine{00226\ \};}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ENEMY\_H}}
+
+\end{DoxyCode}

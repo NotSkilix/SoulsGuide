@@ -1,0 +1,43 @@
+\doxysection{trap.\+h}
+\hypertarget{trap_8h_source}{}\label{trap_8h_source}\index{App/trap.h@{App/trap.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TRAP\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TRAP\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QPoint>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QRect>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_trap}{Trap}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{comment}{//\ position\ is\ the\ center\ point\ of\ the\ rectangle}}
+\DoxyCodeLine{00020\ \ \ \ \ QPoint\ itsPosition;}
+\DoxyCodeLine{00022\ \ \ \ \ QRect\ itsRect;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ itsHeight;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{int}\ itsWidth;}
+\DoxyCodeLine{00027\ \ \ \ \ QPixmap\ itsSprite;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_trap_abe82e25034fbe0a59a8e39bbf7c5586b}{Trap}}(\textcolor{keyword}{const}\ QPoint\&\ initialPosition,\ \textcolor{keywordtype}{int}\ initialHeight,\ \textcolor{keywordtype}{int}\ initialWidth);}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_trap_a42186f7e6b3b5fccd349bd9d49e7627d}{\string~Trap}}();}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trap_ade792798821b6cd1742209b683e11cd1}{updateTrapRelativePosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{bool}\ isColliding);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ Getters}}
+\DoxyCodeLine{00066\ \ \ \ \ QPoint\ \mbox{\hyperlink{class_trap_a11d9d4503069a6c8bc9beed1c6f6d107}{getItsPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_trap_adbab6b0d15da1d9acad8e54fe9503edd}{getItsHeight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_trap_a8f42b451a0f6bf0a02f6686c599d5880}{getItsWidth}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00091\ \ \ \ \ QRect\ \mbox{\hyperlink{class_trap_a86e8093cc07e7c27322c8b0aeed8a850}{getItsRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00092\ \ \ \ \ QPixmap\ getItsSprite()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{//\ Setters}}
+\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trap_af13386d0223c99bc3cef5a29168f0dcf}{setItsPosition}}(\textcolor{keyword}{const}\ QPoint\&\ newPosition);}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trap_a05ef310d4d4e8d1cd92868188c758b90}{setItsHeight}}(\textcolor{keywordtype}{int}\ newHeight);}
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trap_acc8c44c19f52297a0bc17f49372ea5bf}{setItsWidth}}(\textcolor{keywordtype}{int}\ newWidth);}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_trap_a21166ebe97cd52c43ef7df67286ea6c3}{setItsRect}}(\textcolor{keyword}{const}\ QRect\&\ newRect);}
+\DoxyCodeLine{00127\ \};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TRAP\_H}}
+
+\end{DoxyCode}

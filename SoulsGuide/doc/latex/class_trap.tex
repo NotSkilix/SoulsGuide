@@ -1,0 +1,322 @@
+\doxysection{Trap Class Reference}
+\hypertarget{class_trap}{}\label{class_trap}\index{Trap@{Trap}}
+
+
+The \doxylink{class_trap}{Trap} class implements the game\textquotesingle{}s Platforms entity and describes its behavior.  
+
+
+
+
+{\ttfamily \#include $<$trap.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trap_abe82e25034fbe0a59a8e39bbf7c5586b}{Trap}} (const QPoint \&initial\+Position, int initial\+Height, int initial\+Width)
+\begin{DoxyCompactList}\small\item\em The constructor to create a \doxylink{class_trap}{Trap}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_trap_a42186f7e6b3b5fccd349bd9d49e7627d}{\texorpdfstring{$\sim$}{\string~}\+Trap}} ()
+\begin{DoxyCompactList}\small\item\em The destructor to delete a trap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trap_ade792798821b6cd1742209b683e11cd1}{update\+Trap\+Relative\+Position}} (int x, bool is\+Colliding)
+\begin{DoxyCompactList}\small\item\em This method update the \doxylink{class_trap}{Trap} position in the game relative to player movement. \end{DoxyCompactList}\item 
+QPoint \mbox{\hyperlink{class_trap_a11d9d4503069a6c8bc9beed1c6f6d107}{get\+Its\+Position}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Position value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_trap_adbab6b0d15da1d9acad8e54fe9503edd}{get\+Its\+Height}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Height value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_trap_a8f42b451a0f6bf0a02f6686c599d5880}{get\+Its\+Width}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Width value. \end{DoxyCompactList}\item 
+QRect \mbox{\hyperlink{class_trap_a86e8093cc07e7c27322c8b0aeed8a850}{get\+Its\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Rect value (its\+Rect represent the hitbox of the \doxylink{class_trap}{Trap}) \end{DoxyCompactList}\item 
+\Hypertarget{class_trap_ab35c0643c5f83fdc339c98c58fc6341f}\label{class_trap_ab35c0643c5f83fdc339c98c58fc6341f} 
+QPixmap {\bfseries get\+Its\+Sprite} () const
+\item 
+void \mbox{\hyperlink{class_trap_af13386d0223c99bc3cef5a29168f0dcf}{set\+Its\+Position}} (const QPoint \&new\+Position)
+\begin{DoxyCompactList}\small\item\em This method change the its\+Position value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trap_a05ef310d4d4e8d1cd92868188c758b90}{set\+Its\+Height}} (int new\+Height)
+\begin{DoxyCompactList}\small\item\em This method change the its\+Height value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trap_acc8c44c19f52297a0bc17f49372ea5bf}{set\+Its\+Width}} (int new\+Width)
+\begin{DoxyCompactList}\small\item\em This method change the its\+Width value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_trap_a21166ebe97cd52c43ef7df67286ea6c3}{set\+Its\+Rect}} (const QRect \&new\+Rect)
+\begin{DoxyCompactList}\small\item\em This method change the value of the hitbox of the \doxylink{class_trap}{Trap}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_trap}{Trap} class implements the game\textquotesingle{}s Platforms entity and describes its behavior. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_trap_abe82e25034fbe0a59a8e39bbf7c5586b}\index{Trap@{Trap}!Trap@{Trap}}
+\index{Trap@{Trap}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{Trap()}{Trap()}}
+{\footnotesize\ttfamily \label{class_trap_abe82e25034fbe0a59a8e39bbf7c5586b} 
+Trap\+::\+Trap (\begin{DoxyParamCaption}\item[{const QPoint \&}]{initial\+Position}{, }\item[{int}]{initial\+Height}{, }\item[{int}]{initial\+Width}{}\end{DoxyParamCaption})}
+
+
+
+The constructor to create a \doxylink{class_trap}{Trap}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Position,type} & QPoint\& \+: the \doxylink{class_trap}{Trap}\textquotesingle{}s position coordinates \\
+\hline
+{\em initial\+Height,type} & int \+: the Traps height value \\
+\hline
+{\em initial\+Width,type} & int \+: the Traps width value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_trap_a42186f7e6b3b5fccd349bd9d49e7627d}\index{Trap@{Trap}!````~Trap@{\texorpdfstring{$\sim$}{\string~}Trap}}
+\index{````~Trap@{\texorpdfstring{$\sim$}{\string~}Trap}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Trap()}{\string~Trap()}}
+{\footnotesize\ttfamily \label{class_trap_a42186f7e6b3b5fccd349bd9d49e7627d} 
+Trap\+::\texorpdfstring{$\sim$}{\string~}\+Trap (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The destructor to delete a trap. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_trap_adbab6b0d15da1d9acad8e54fe9503edd}\index{Trap@{Trap}!getItsHeight@{getItsHeight}}
+\index{getItsHeight@{getItsHeight}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{getItsHeight()}{getItsHeight()}}
+{\footnotesize\ttfamily \label{class_trap_adbab6b0d15da1d9acad8e54fe9503edd} 
+int Trap\+::get\+Its\+Height (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Height value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Height, type int \+: the height value of the \doxylink{class_trap}{Trap} 
+\end{DoxyReturn}
+\Hypertarget{class_trap_a11d9d4503069a6c8bc9beed1c6f6d107}\index{Trap@{Trap}!getItsPosition@{getItsPosition}}
+\index{getItsPosition@{getItsPosition}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{getItsPosition()}{getItsPosition()}}
+{\footnotesize\ttfamily \label{class_trap_a11d9d4503069a6c8bc9beed1c6f6d107} 
+QPoint Trap\+::get\+Its\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Position value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Position, type QPoint \+: the coordinate of the \doxylink{class_trap}{Trap} 
+\end{DoxyReturn}
+\Hypertarget{class_trap_a86e8093cc07e7c27322c8b0aeed8a850}\index{Trap@{Trap}!getItsRect@{getItsRect}}
+\index{getItsRect@{getItsRect}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{getItsRect()}{getItsRect()}}
+{\footnotesize\ttfamily \label{class_trap_a86e8093cc07e7c27322c8b0aeed8a850} 
+QRect Trap\+::get\+Its\+Rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Rect value (its\+Rect represent the hitbox of the \doxylink{class_trap}{Trap}) 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Rect, type QRect \+: the hitbox of the \doxylink{class_trap}{Trap} 
+\end{DoxyReturn}
+\Hypertarget{class_trap_a8f42b451a0f6bf0a02f6686c599d5880}\index{Trap@{Trap}!getItsWidth@{getItsWidth}}
+\index{getItsWidth@{getItsWidth}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{getItsWidth()}{getItsWidth()}}
+{\footnotesize\ttfamily \label{class_trap_a8f42b451a0f6bf0a02f6686c599d5880} 
+int Trap\+::get\+Its\+Width (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Width value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Width, type int \+: the width value of the \doxylink{class_trap}{Trap} 
+\end{DoxyReturn}
+\Hypertarget{class_trap_a05ef310d4d4e8d1cd92868188c758b90}\index{Trap@{Trap}!setItsHeight@{setItsHeight}}
+\index{setItsHeight@{setItsHeight}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{setItsHeight()}{setItsHeight()}}
+{\footnotesize\ttfamily \label{class_trap_a05ef310d4d4e8d1cd92868188c758b90} 
+void Trap\+::set\+Its\+Height (\begin{DoxyParamCaption}\item[{int}]{new\+Height}{}\end{DoxyParamCaption})}
+
+
+
+This method change the its\+Height value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Height,type} & int \+: the height value of the \doxylink{class_trap}{Trap} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_trap_af13386d0223c99bc3cef5a29168f0dcf}\index{Trap@{Trap}!setItsPosition@{setItsPosition}}
+\index{setItsPosition@{setItsPosition}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{setItsPosition()}{setItsPosition()}}
+{\footnotesize\ttfamily \label{class_trap_af13386d0223c99bc3cef5a29168f0dcf} 
+void Trap\+::set\+Its\+Position (\begin{DoxyParamCaption}\item[{const QPoint \&}]{new\+Position}{}\end{DoxyParamCaption})}
+
+
+
+This method change the its\+Position value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Position,type} & QPoint\& \+: The \doxylink{class_trap}{Trap}\textquotesingle{}s coordinates \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_trap_a21166ebe97cd52c43ef7df67286ea6c3}\index{Trap@{Trap}!setItsRect@{setItsRect}}
+\index{setItsRect@{setItsRect}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{setItsRect()}{setItsRect()}}
+{\footnotesize\ttfamily \label{class_trap_a21166ebe97cd52c43ef7df67286ea6c3} 
+void Trap\+::set\+Its\+Rect (\begin{DoxyParamCaption}\item[{const QRect \&}]{new\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+This method change the value of the hitbox of the \doxylink{class_trap}{Trap}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rect,type} & QRect\& \+: The hitbox value of the \doxylink{class_trap}{Trap} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_trap_acc8c44c19f52297a0bc17f49372ea5bf}\index{Trap@{Trap}!setItsWidth@{setItsWidth}}
+\index{setItsWidth@{setItsWidth}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{setItsWidth()}{setItsWidth()}}
+{\footnotesize\ttfamily \label{class_trap_acc8c44c19f52297a0bc17f49372ea5bf} 
+void Trap\+::set\+Its\+Width (\begin{DoxyParamCaption}\item[{int}]{new\+Width}{}\end{DoxyParamCaption})}
+
+
+
+This method change the its\+Width value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Width,type} & int \+: the width value of the \doxylink{class_trap}{Trap} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_trap_ade792798821b6cd1742209b683e11cd1}\index{Trap@{Trap}!updateTrapRelativePosition@{updateTrapRelativePosition}}
+\index{updateTrapRelativePosition@{updateTrapRelativePosition}!Trap@{Trap}}
+\doxysubsubsection{\texorpdfstring{updateTrapRelativePosition()}{updateTrapRelativePosition()}}
+{\footnotesize\ttfamily \label{class_trap_ade792798821b6cd1742209b683e11cd1} 
+void Trap\+::update\+Trap\+Relative\+Position (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{bool}]{is\+Colliding}{}\end{DoxyParamCaption})}
+
+
+
+This method update the \doxylink{class_trap}{Trap} position in the game relative to player movement. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x,type} & int \+: The direction \\
+\hline
+{\em is\+Colliding,type} & bool \+: If the player collides with a platform \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+App/trap.\+h\item 
+App/trap.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,317 @@
+\doxysection{Flag Class Reference}
+\hypertarget{class_flag}{}\label{class_flag}\index{Flag@{Flag}}
+
+
+The \doxylink{class_flag}{Flag} class implements the game\textquotesingle{}s \doxylink{class_flag}{Flag} entity and describes its behavior.  
+
+
+
+
+{\ttfamily \#include $<$flag.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flag_a50b074239c14091f2a0dc1f52f9ed230}{Flag}} ()
+\begin{DoxyCompactList}\small\item\em The default constructor of the \doxylink{class_flag}{Flag}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flag_a0f8f181d049036f54b5609bc646e2960}{\texorpdfstring{$\sim$}{\string~}\+Flag}} ()
+\begin{DoxyCompactList}\small\item\em The destructor to delete a \doxylink{class_flag}{Flag}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flag_ad74930faf1300113aa4cc4aa85dc6866}{Flag}} (const QPoint \&initial\+Position, int initial\+Size)
+\begin{DoxyCompactList}\small\item\em The constructor to create a \doxylink{class_flag}{Flag}. \end{DoxyCompactList}\item 
+QPoint \mbox{\hyperlink{class_flag_a3433ce5a63ede2518b006a593f6bbc6b}{get\+Its\+Position}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Position value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_flag_a5ebf45059c78ac0315cd52331bce8d1e}{get\+Its\+Size}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Size value. \end{DoxyCompactList}\item 
+QRect \mbox{\hyperlink{class_flag_a440db31773cf6068b8459f63f2007a7e}{get\+Its\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Rect value (its\+Rect represent the hitbox of the \doxylink{class_flag}{Flag}) \end{DoxyCompactList}\item 
+QPixmap \mbox{\hyperlink{class_flag_acf6b60564c3db0677c8d5b3b5f3210c9}{get\+Its\+Sprite}} (int index) const
+\begin{DoxyCompactList}\small\item\em This method return a sprite from the its\+Sprites vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_a62308dcf652a9e26a10e2ab2e8de253c}{set\+Its\+Position}} (const QPoint \&new\+Position)
+\begin{DoxyCompactList}\small\item\em This method change the its\+Position value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_a11ec7c2579622abc51e5adb1a7a9ee98}{set\+Its\+Size}} (int new\+Size)
+\begin{DoxyCompactList}\small\item\em This method change the its\+Size value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_ae7be2d0ac29c89aa00a50d651eeaa370}{set\+Its\+Rect}} (const QRect \&new\+Rect)
+\begin{DoxyCompactList}\small\item\em This method change the value of the hitbox of the \doxylink{class_flag}{Flag}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flag_a163dad37db3325d26485f49c9ffcc8f3}{update\+Flag\+Relative\+Position}} (int x, bool is\+Colliding)
+\begin{DoxyCompactList}\small\item\em This method update the \doxylink{class_flag}{Flag} position in the game relative to player movement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_flag}{Flag} class implements the game\textquotesingle{}s \doxylink{class_flag}{Flag} entity and describes its behavior. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_flag_a50b074239c14091f2a0dc1f52f9ed230}\index{Flag@{Flag}!Flag@{Flag}}
+\index{Flag@{Flag}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{Flag()}{Flag()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_flag_a50b074239c14091f2a0dc1f52f9ed230} 
+Flag\+::\+Flag (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The default constructor of the \doxylink{class_flag}{Flag}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\Hypertarget{class_flag_a0f8f181d049036f54b5609bc646e2960}\index{Flag@{Flag}!````~Flag@{\texorpdfstring{$\sim$}{\string~}Flag}}
+\index{````~Flag@{\texorpdfstring{$\sim$}{\string~}Flag}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Flag()}{\string~Flag()}}
+{\footnotesize\ttfamily \label{class_flag_a0f8f181d049036f54b5609bc646e2960} 
+Flag\+::\texorpdfstring{$\sim$}{\string~}\+Flag (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The destructor to delete a \doxylink{class_flag}{Flag}. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6 June 2024 
+\end{DoxyDate}
+\Hypertarget{class_flag_ad74930faf1300113aa4cc4aa85dc6866}\index{Flag@{Flag}!Flag@{Flag}}
+\index{Flag@{Flag}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{Flag()}{Flag()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_flag_ad74930faf1300113aa4cc4aa85dc6866} 
+Flag\+::\+Flag (\begin{DoxyParamCaption}\item[{const QPoint \&}]{initial\+Position}{, }\item[{int}]{initial\+Size}{}\end{DoxyParamCaption})}
+
+
+
+The constructor to create a \doxylink{class_flag}{Flag}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Position,type} & QPoint\& \+: the \doxylink{class_flag}{Flag}\textquotesingle{}s position coordinates \\
+\hline
+{\em initial\+Size,type} & int \+: the size of the \doxylink{class_flag}{Flag} (the \doxylink{class_flag}{Flag} is a square) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_flag_a3433ce5a63ede2518b006a593f6bbc6b}\index{Flag@{Flag}!getItsPosition@{getItsPosition}}
+\index{getItsPosition@{getItsPosition}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{getItsPosition()}{getItsPosition()}}
+{\footnotesize\ttfamily \label{class_flag_a3433ce5a63ede2518b006a593f6bbc6b} 
+QPoint Flag\+::get\+Its\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Position value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Position, type QPoint \+: the coordinate of the \doxylink{class_flag}{Flag} 
+\end{DoxyReturn}
+\Hypertarget{class_flag_a440db31773cf6068b8459f63f2007a7e}\index{Flag@{Flag}!getItsRect@{getItsRect}}
+\index{getItsRect@{getItsRect}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{getItsRect()}{getItsRect()}}
+{\footnotesize\ttfamily \label{class_flag_a440db31773cf6068b8459f63f2007a7e} 
+QRect Flag\+::get\+Its\+Rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Rect value (its\+Rect represent the hitbox of the \doxylink{class_flag}{Flag}) 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Rect, type QRect \+: the hitbox of the \doxylink{class_flag}{Flag} 
+\end{DoxyReturn}
+\Hypertarget{class_flag_a5ebf45059c78ac0315cd52331bce8d1e}\index{Flag@{Flag}!getItsSize@{getItsSize}}
+\index{getItsSize@{getItsSize}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{getItsSize()}{getItsSize()}}
+{\footnotesize\ttfamily \label{class_flag_a5ebf45059c78ac0315cd52331bce8d1e} 
+int Flag\+::get\+Its\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Size value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Size, type int \+: the size of the \doxylink{class_flag}{Flag} 
+\end{DoxyReturn}
+\Hypertarget{class_flag_acf6b60564c3db0677c8d5b3b5f3210c9}\index{Flag@{Flag}!getItsSprite@{getItsSprite}}
+\index{getItsSprite@{getItsSprite}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{getItsSprite()}{getItsSprite()}}
+{\footnotesize\ttfamily \label{class_flag_acf6b60564c3db0677c8d5b3b5f3210c9} 
+QPixmap Flag\+::get\+Its\+Sprite (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return a sprite from the its\+Sprites vector. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em index,type} & int \+: the index of the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+its\+Sprites, type QPixmap \+: a sprite from the its\+Sprites vector 
+\end{DoxyReturn}
+\Hypertarget{class_flag_a62308dcf652a9e26a10e2ab2e8de253c}\index{Flag@{Flag}!setItsPosition@{setItsPosition}}
+\index{setItsPosition@{setItsPosition}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{setItsPosition()}{setItsPosition()}}
+{\footnotesize\ttfamily \label{class_flag_a62308dcf652a9e26a10e2ab2e8de253c} 
+void Flag\+::set\+Its\+Position (\begin{DoxyParamCaption}\item[{const QPoint \&}]{new\+Position}{}\end{DoxyParamCaption})}
+
+
+
+This method change the its\+Position value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Position,type} & QPoint\& \+: The \doxylink{class_flag}{Flag}\textquotesingle{}s coordinates \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_flag_ae7be2d0ac29c89aa00a50d651eeaa370}\index{Flag@{Flag}!setItsRect@{setItsRect}}
+\index{setItsRect@{setItsRect}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{setItsRect()}{setItsRect()}}
+{\footnotesize\ttfamily \label{class_flag_ae7be2d0ac29c89aa00a50d651eeaa370} 
+void Flag\+::set\+Its\+Rect (\begin{DoxyParamCaption}\item[{const QRect \&}]{new\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+This method change the value of the hitbox of the \doxylink{class_flag}{Flag}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rect,type} & QRect\& \+: The hitbox value of the \doxylink{class_flag}{Flag} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_flag_a11ec7c2579622abc51e5adb1a7a9ee98}\index{Flag@{Flag}!setItsSize@{setItsSize}}
+\index{setItsSize@{setItsSize}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{setItsSize()}{setItsSize()}}
+{\footnotesize\ttfamily \label{class_flag_a11ec7c2579622abc51e5adb1a7a9ee98} 
+void Flag\+::set\+Its\+Size (\begin{DoxyParamCaption}\item[{int}]{new\+Size}{}\end{DoxyParamCaption})}
+
+
+
+This method change the its\+Size value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Size,type} & int \+: The \doxylink{class_flag}{Flag}\textquotesingle{}s size \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_flag_a163dad37db3325d26485f49c9ffcc8f3}\index{Flag@{Flag}!updateFlagRelativePosition@{updateFlagRelativePosition}}
+\index{updateFlagRelativePosition@{updateFlagRelativePosition}!Flag@{Flag}}
+\doxysubsubsection{\texorpdfstring{updateFlagRelativePosition()}{updateFlagRelativePosition()}}
+{\footnotesize\ttfamily \label{class_flag_a163dad37db3325d26485f49c9ffcc8f3} 
+void Flag\+::update\+Flag\+Relative\+Position (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{bool}]{is\+Colliding}{}\end{DoxyParamCaption})}
+
+
+
+This method update the \doxylink{class_flag}{Flag} position in the game relative to player movement. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x,type} & int \+: The direction \\
+\hline
+{\em is\+Colliding,type} & bool \+: If the player collides with a platform \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+App/flag.\+h\item 
+App/flag.\+cpp\end{DoxyCompactItemize}

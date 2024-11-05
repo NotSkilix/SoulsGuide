@@ -1,0 +1,276 @@
+\doxysection{Platform Class Reference}
+\hypertarget{class_platform}{}\label{class_platform}\index{Platform@{Platform}}
+
+
+The \doxylink{class_platform}{Platform} class implements the game\textquotesingle{}s Platforms entity and describes its behavior.  
+
+
+
+
+{\ttfamily \#include $<$platform.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_platform_a53b6c0241a2283adee19be101e8ad5a5}{Platform}} (int x, int y, int width, int height)
+\begin{DoxyCompactList}\small\item\em The constructor to create a \doxylink{class_platform}{Platform}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_platform_a13b5e4ef946b8a2fe38d22014145ab68}{\texorpdfstring{$\sim$}{\string~}\+Platform}} ()
+\begin{DoxyCompactList}\small\item\em The destructor to delete a platform. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_platform_ae11105a7de8b305b2c318bbcd1580617}{update\+Platform\+Relative\+Position}} (int x, bool is\+Colliding)
+\begin{DoxyCompactList}\small\item\em This method update the \doxylink{class_platform}{Platform} position in the game relative to player movement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_platform_a1156e3398b48cef843b0a89980ce6a0f}{load\+Sprites}} (int current\+Level)
+\begin{DoxyCompactList}\small\item\em This method loads the sprites of the platforms depending to the level. \end{DoxyCompactList}\item 
+QRect \mbox{\hyperlink{class_platform_a2c3001808a4d2b9c450999183e1b7d0b}{get\+Its\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em This method return the hitbox of the \doxylink{class_platform}{Platform}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_platform_a171dab32abe740d9ceafe295642067a5}{get\+Is\+Breakable}} () const
+\begin{DoxyCompactList}\small\item\em This method return the is\+Breakable value. \end{DoxyCompactList}\item 
+QPixmap \mbox{\hyperlink{class_platform_adc8bf655b6a332a00b6fc3c81a84bec3}{get\+Its\+Sprite}} (int index) const
+\begin{DoxyCompactList}\small\item\em This method return a sprite from the its\+Sprites vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_platform_a8d505f668b4b2df34d9880ef818d4307}{set\+Its\+Rect}} (const QRect \&new\+Its\+Rect)
+\begin{DoxyCompactList}\small\item\em This method change the value of the hitbox of the \doxylink{class_platform}{Platform}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_platform_a928d8c635c254fb61f2aed921b06694d}{set\+Is\+Breakable}} (bool new\+State)
+\begin{DoxyCompactList}\small\item\em This method change the value of is\+Breakable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_platform}{Platform} class implements the game\textquotesingle{}s Platforms entity and describes its behavior. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_platform_a53b6c0241a2283adee19be101e8ad5a5}\index{Platform@{Platform}!Platform@{Platform}}
+\index{Platform@{Platform}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{Platform()}{Platform()}}
+{\footnotesize\ttfamily \label{class_platform_a53b6c0241a2283adee19be101e8ad5a5} 
+Platform\+::\+Platform (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{width}{, }\item[{int}]{height}{}\end{DoxyParamCaption})}
+
+
+
+The constructor to create a \doxylink{class_platform}{Platform}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x,type} & int \+: coordinate x of the platform \\
+\hline
+{\em y,type} & int \+: coordinate y of the platform \\
+\hline
+{\em width,type} & int \+: the width of the platform \\
+\hline
+{\em height,type} & int \+: the height of the platform \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_platform_a13b5e4ef946b8a2fe38d22014145ab68}\index{Platform@{Platform}!````~Platform@{\texorpdfstring{$\sim$}{\string~}Platform}}
+\index{````~Platform@{\texorpdfstring{$\sim$}{\string~}Platform}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Platform()}{\string~Platform()}}
+{\footnotesize\ttfamily \label{class_platform_a13b5e4ef946b8a2fe38d22014145ab68} 
+Platform\+::\texorpdfstring{$\sim$}{\string~}\+Platform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The destructor to delete a platform. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_platform_a171dab32abe740d9ceafe295642067a5}\index{Platform@{Platform}!getIsBreakable@{getIsBreakable}}
+\index{getIsBreakable@{getIsBreakable}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{getIsBreakable()}{getIsBreakable()}}
+{\footnotesize\ttfamily \label{class_platform_a171dab32abe740d9ceafe295642067a5} 
+bool Platform\+::get\+Is\+Breakable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the is\+Breakable value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+is\+Breakable, type bool \+: tell if the platform is breakable 
+\end{DoxyReturn}
+\Hypertarget{class_platform_a2c3001808a4d2b9c450999183e1b7d0b}\index{Platform@{Platform}!getItsRect@{getItsRect}}
+\index{getItsRect@{getItsRect}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{getItsRect()}{getItsRect()}}
+{\footnotesize\ttfamily \label{class_platform_a2c3001808a4d2b9c450999183e1b7d0b} 
+QRect Platform\+::get\+Its\+Rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the hitbox of the \doxylink{class_platform}{Platform}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Rect, type QRect \+: the hitbox of the \doxylink{class_platform}{Platform} 
+\end{DoxyReturn}
+\Hypertarget{class_platform_adc8bf655b6a332a00b6fc3c81a84bec3}\index{Platform@{Platform}!getItsSprite@{getItsSprite}}
+\index{getItsSprite@{getItsSprite}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{getItsSprite()}{getItsSprite()}}
+{\footnotesize\ttfamily \label{class_platform_adc8bf655b6a332a00b6fc3c81a84bec3} 
+QPixmap Platform\+::get\+Its\+Sprite (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return a sprite from the its\+Sprites vector. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em index,type} & int \+: the index of the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+its\+Sprites, type QPixmap \+: a sprite from the its\+Sprites vector 
+\end{DoxyReturn}
+\Hypertarget{class_platform_a1156e3398b48cef843b0a89980ce6a0f}\index{Platform@{Platform}!loadSprites@{loadSprites}}
+\index{loadSprites@{loadSprites}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{loadSprites()}{loadSprites()}}
+{\footnotesize\ttfamily \label{class_platform_a1156e3398b48cef843b0a89980ce6a0f} 
+void Platform\+::load\+Sprites (\begin{DoxyParamCaption}\item[{int}]{current\+Level}{}\end{DoxyParamCaption})}
+
+
+
+This method loads the sprites of the platforms depending to the level. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+9 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Level,type} & int \+: the index of the current level \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_platform_a928d8c635c254fb61f2aed921b06694d}\index{Platform@{Platform}!setIsBreakable@{setIsBreakable}}
+\index{setIsBreakable@{setIsBreakable}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{setIsBreakable()}{setIsBreakable()}}
+{\footnotesize\ttfamily \label{class_platform_a928d8c635c254fb61f2aed921b06694d} 
+void Platform\+::set\+Is\+Breakable (\begin{DoxyParamCaption}\item[{bool}]{new\+State}{}\end{DoxyParamCaption})}
+
+
+
+This method change the value of is\+Breakable. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+State,type} & bool \+: The state of the \doxylink{class_platform}{Platform} (breakable or not) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_platform_a8d505f668b4b2df34d9880ef818d4307}\index{Platform@{Platform}!setItsRect@{setItsRect}}
+\index{setItsRect@{setItsRect}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{setItsRect()}{setItsRect()}}
+{\footnotesize\ttfamily \label{class_platform_a8d505f668b4b2df34d9880ef818d4307} 
+void Platform\+::set\+Its\+Rect (\begin{DoxyParamCaption}\item[{const QRect \&}]{new\+Its\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+This method change the value of the hitbox of the \doxylink{class_platform}{Platform}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Its\+Rect,type} & QRect\& \+: The hitbox value of the \doxylink{class_flag}{Flag} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_platform_ae11105a7de8b305b2c318bbcd1580617}\index{Platform@{Platform}!updatePlatformRelativePosition@{updatePlatformRelativePosition}}
+\index{updatePlatformRelativePosition@{updatePlatformRelativePosition}!Platform@{Platform}}
+\doxysubsubsection{\texorpdfstring{updatePlatformRelativePosition()}{updatePlatformRelativePosition()}}
+{\footnotesize\ttfamily \label{class_platform_ae11105a7de8b305b2c318bbcd1580617} 
+void Platform\+::update\+Platform\+Relative\+Position (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{bool}]{is\+Colliding}{}\end{DoxyParamCaption})}
+
+
+
+This method update the \doxylink{class_platform}{Platform} position in the game relative to player movement. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x,type} & int \+: The direction \\
+\hline
+{\em is\+Colliding,type} & bool \+: If the player collides with a platform \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+App/platform.\+h\item 
+App/platform.\+cpp\end{DoxyCompactItemize}

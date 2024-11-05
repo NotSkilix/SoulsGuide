@@ -1,0 +1,96 @@
+\doxysection{type\+Def.\+h}
+\hypertarget{type_def_8h_source}{}\label{type_def_8h_source}\index{App/typeDef.h@{App/typeDef.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TYPEDEF\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TYPEDEF\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QPixmap>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//\ Global:}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ WINDOW\_HEIGHT\ =\ 740;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ WINDOW\_WIDTH\ =\ 1260;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{float}\ GRAVITY\ =\ 0.7;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ POWERUP\_TIME\ =\ 6;\ \textcolor{comment}{//\ in\ seconds}}
+\DoxyCodeLine{00017\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ FPS\ =\ 60;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{comment}{//\ Boss:}}
+\DoxyCodeLine{00021\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BOSS\_HEIGHT\ =\ 300;}
+\DoxyCodeLine{00023\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BOSS\_WIDTH\ =\ 250;}
+\DoxyCodeLine{00025\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BOSSFIGHT\_BOSS\_HEIGHT\ =\ 200;}
+\DoxyCodeLine{00027\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ BOSSFIGHT\_BOSS\_WIDTH\ =\ 150;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{comment}{//\ Player:}}
+\DoxyCodeLine{00031\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ PLAYER\_HEIGHT\ =\ 80;}
+\DoxyCodeLine{00033\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ PLAYER\_WIDTH\ =\ 170;}
+\DoxyCodeLine{00035\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SAKE\_PLAYER\_HEIGHT\ =\ 100;}
+\DoxyCodeLine{00037\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ SAKE\_PLAYER\_WIDTH\ =\ 190;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{comment}{//\ Power\ Up}}
+\DoxyCodeLine{00040\ \textcolor{keyword}{enum}\ PowerUpType}
+\DoxyCodeLine{00041\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ SalmonSushi,}
+\DoxyCodeLine{00043\ \ \ \ \ WoodenSandals,}
+\DoxyCodeLine{00044\ \ \ \ \ Sake}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00047\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ ARMOR\_DURATION\ =\ 36;}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{comment}{//Enemy}}
+\DoxyCodeLine{00050\ \textcolor{keyword}{enum}\ EnemyType\{}
+\DoxyCodeLine{00051\ \ \ \ \ Skully,}
+\DoxyCodeLine{00052\ \ \ \ \ Phantom,}
+\DoxyCodeLine{00053\ \ \ \ \ Eye,}
+\DoxyCodeLine{00054\ \ \ \ \ Gold}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{comment}{//\ Level}}
+\DoxyCodeLine{00059\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ LEVEL1\ =\ \textcolor{stringliteral}{"{}../App/level\_1.csv"{}};}
+\DoxyCodeLine{00061\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ LEVEL2\ =\ \textcolor{stringliteral}{"{}../App/level\_2.csv"{}};}
+\DoxyCodeLine{00063\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ LEVEL3\ =\ \textcolor{stringliteral}{"{}../App/level\_3.csv"{}};}
+\DoxyCodeLine{00065\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ LEVEL4\ =\ \textcolor{stringliteral}{"{}../App/level\_4.csv"{}};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \textcolor{comment}{//\ Backgrounds}}
+\DoxyCodeLine{00068\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ BACKGROUND\_MAINMENU\ =\ \textcolor{stringliteral}{"{}../game\_ressources/background\_mainMenu.png"{}};}
+\DoxyCodeLine{00069\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ BACKGROUND\_DEATHSCREEN\ =\ \textcolor{stringliteral}{"{}../game\_ressources/background\_deathscreen.png"{}};}
+\DoxyCodeLine{00070\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ BACKGROUND\_LEVEL1\ =\ \textcolor{stringliteral}{"{}../game\_ressources/background\_level1.png"{}};}
+\DoxyCodeLine{00071\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ BACKGROUND\_LEVEL2\ =\ \textcolor{stringliteral}{"{}../game\_ressources/background\_level2.png"{}};}
+\DoxyCodeLine{00072\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ BACKGROUND\_LEVEL3\ =\ \textcolor{stringliteral}{"{}../game\_ressources/background\_level3.png"{}};}
+\DoxyCodeLine{00073\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ BACKGROUND\_LEVEL4\ =\ \textcolor{stringliteral}{"{}../game\_ressources/background\_level4.png"{}};}
+\DoxyCodeLine{00074\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ BACKGROUND\_DEFAULT\ =\ BACKGROUND\_LEVEL1;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \textcolor{comment}{//\ Musics}}
+\DoxyCodeLine{00078\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ MUSIC\_MAINMENU\ =\ \textcolor{stringliteral}{"{}../game\_ressources/music\_mainMenu.wav"{}};}
+\DoxyCodeLine{00079\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ MUSIC\_LEVEL1\ =\ \textcolor{stringliteral}{"{}../game\_ressources/music\_level1.mp3"{}};}
+\DoxyCodeLine{00080\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ MUSIC\_LEVEL2\ =\ \textcolor{stringliteral}{"{}../game\_ressources/music\_level2.wav"{}};\ \textcolor{comment}{//\ MUSIC\ SET\ TO\ MAINMENU\ UNTIL\ WE\ HAVE\ THE\ RIGHT\ ONE}}
+\DoxyCodeLine{00081\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ MUSIC\_LEVEL3\ =\ \textcolor{stringliteral}{"{}../game\_ressources/music\_level3.mp3"{}};}
+\DoxyCodeLine{00082\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ MUSIC\_BOSSFIGHT\ =\ \textcolor{stringliteral}{"{}../game\_ressources/music\_level666.wav"{}};\ \textcolor{comment}{//\ MUSIC\ SET\ TO\ MAINMENU\ UNTIL\ WE\ HAVE\ THE\ RIGHT\ ONE}}
+\DoxyCodeLine{00083\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ MUSIC\_DEFAULT\ =\ MUSIC\_MAINMENU;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{comment}{//Game\ Logo}}
+\DoxyCodeLine{00086\ \textcolor{comment}{//string\ GAMELOGO\ =\ "{}../game\_ressources/gameLogo.png"{};}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_frame}{Frame}}\{}
+\DoxyCodeLine{00090\ \ \ \ \ QPixmap\ image;}
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{struct_frame}{Frame}}\ *\ next;}
+\DoxyCodeLine{00092\ \};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_animation}{Animation}}\{}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{struct_frame}{Frame}}\ *\ first;}
+\DoxyCodeLine{00097\ \};}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00100\ \textcolor{keyword}{enum}\ interface}
+\DoxyCodeLine{00101\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ NONE,\ \textcolor{comment}{//\ Used\ to\ delete\ the\ interface}}
+\DoxyCodeLine{00103\ \ \ \ \ GAME,}
+\DoxyCodeLine{00104\ \ \ \ \ MAINMENU,}
+\DoxyCodeLine{00105\ \ \ \ \ DEATHSCREEN,}
+\DoxyCodeLine{00106\ \ \ \ \ LEADERBOARD,}
+\DoxyCodeLine{00107\ \ \ \ \ PAUSED}
+\DoxyCodeLine{00108\ \};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ TYPEDEF\_H}}
+
+\end{DoxyCode}

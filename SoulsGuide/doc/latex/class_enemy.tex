@@ -1,0 +1,567 @@
+\doxysection{Enemy Class Reference}
+\hypertarget{class_enemy}{}\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+The \doxylink{class_enemy}{Enemy} class implements the game\textquotesingle{}s Enemies and describes their behavior.  
+
+
+
+
+{\ttfamily \#include $<$enemy.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_enemy_a750ef29492510276c9c9cb62c143a78c}{Enemy}} (const QRect \&initial\+Rect, const QPoint \&starting\+Point, const QPoint \&ending\+Point, int move\+Speed, int type)
+\begin{DoxyCompactList}\small\item\em The constructor to create an \doxylink{class_enemy}{Enemy}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_enemy_ac0eec4755e28c02688065f9657150ac3}{\texorpdfstring{$\sim$}{\string~}\+Enemy}} ()
+\begin{DoxyCompactList}\small\item\em The destructor to delete an \doxylink{class_enemy}{Enemy}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a43ef301c43078d09a142c1d342227e06}{update\+Position}} ()
+\begin{DoxyCompactList}\small\item\em This method update the position of \doxylink{class_enemy}{Enemy} and check if he is on the starting/ending point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a4a3886bb1d92428baaeea3be5b4342fb}{move\+Towards}} (const QPoint \&target)
+\begin{DoxyCompactList}\small\item\em This method make the \doxylink{class_enemy}{Enemy} move to a target (point) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a68e39ce61b28db39a5da53b771fd05e3}{load\+Animation}} (QString animation\+Name, int frame\+Number)
+\begin{DoxyCompactList}\small\item\em This method load the images needed for the animations in a vector$<$\+Animation$>$ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a366c24e50883973b07b0b67aea65a581}{play\+Animation}} ()
+\begin{DoxyCompactList}\small\item\em This method switch the current frame to the next one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_frame}{Frame}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_enemy_aa170a8225ede27fec7d6d9cbe194101a}{get\+Its\+Current\+Frame}} () const
+\begin{DoxyCompactList}\small\item\em This method gives access to the current frame of the enemy. \end{DoxyCompactList}\item 
+QRect \mbox{\hyperlink{class_enemy_a9343a73034156db358804afa61ffaba4}{get\+Its\+Rect}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Rect value (its\+Rect represent the hitbox of the \doxylink{class_enemy}{Enemy}) \end{DoxyCompactList}\item 
+QPoint \mbox{\hyperlink{class_enemy_ae28423c0a40d64155c8f053b623f5ca3}{get\+Its\+First\+End\+Point}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+First\+End\+Point coordinate. \end{DoxyCompactList}\item 
+QPoint \mbox{\hyperlink{class_enemy_ae4f9e5ba1fe5a0e8c39a3e2bce115aed}{get\+Its\+Second\+End\+Point}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Second\+End\+Point coordinate. \end{DoxyCompactList}\item 
+QPoint \mbox{\hyperlink{class_enemy_a6c6f4d521c877b9d22a33d4582198968}{get\+Its\+Current\+Target}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Current\+Target coordinate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_enemy_a2b5952dbc4fbb47090667f2840b73d42}{get\+Its\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Speed value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_enemy_af06be9c557993d7bc2a808c20865aeec}{get\+Is\+Moving\+To\+Second\+Point}} () const
+\begin{DoxyCompactList}\small\item\em This method return the its\+Moving\+To\+Second\+Point value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a202c67fcf876e0c3660a22f52cb3895b}{set\+Its\+Rect}} (const QRect \&new\+Rect)
+\begin{DoxyCompactList}\small\item\em This method change the value of the hitbox of the \doxylink{class_enemy}{Enemy}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ad5c3f9575b16593e064b39a5f2a4fb24}{set\+Its\+First\+End\+Point}} (const QPoint \&a\+First\+End\+Point)
+\begin{DoxyCompactList}\small\item\em This method change the its\+Firts\+End\+Point value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a23ab28b4df96c7fd3d06f7e16a82a332}{set\+Its\+Second\+End\+Point}} (const QPoint \&a\+Second\+End\+Point)
+\begin{DoxyCompactList}\small\item\em This method change the value of the its\+Second\+End\+Point value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a4e5038b42f2e34101af13cdcf494befd}{set\+Its\+Current\+Target}} (const QPoint \&a\+Target)
+\begin{DoxyCompactList}\small\item\em This method change the its\+Current\+Target value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a3e12d0a01126c100d877463ef06ac734}{set\+Its\+Speed}} (int new\+Speed)
+\begin{DoxyCompactList}\small\item\em This method change the its\+Speed value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_afdabd52c5273b17ab146312b1b6d5649}{set\+Is\+Moving\+To\+Second\+Point}} (bool new\+Moving\+To\+Point2)
+\begin{DoxyCompactList}\small\item\em This method change the its\+Moving\+To\+Second\+Point value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_ab46df26691c5e4b44dcc07bf02921635}{set\+Its\+Current\+Frame}} (int index)
+\begin{DoxyCompactList}\small\item\em This method change the current animation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_enemy_a504cd06a1331dda27556369a01949225}{update\+Enemy\+Relative\+Position}} (int x, bool is\+Colliding)
+\begin{DoxyCompactList}\small\item\em This method update the \doxylink{class_enemy}{Enemy} position in the game relative to player movement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_enemy}{Enemy} class implements the game\textquotesingle{}s Enemies and describes their behavior. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_enemy_a750ef29492510276c9c9cb62c143a78c}\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\index{Enemy@{Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{Enemy()}{Enemy()}}
+{\footnotesize\ttfamily \label{class_enemy_a750ef29492510276c9c9cb62c143a78c} 
+Enemy\+::\+Enemy (\begin{DoxyParamCaption}\item[{const QRect \&}]{initial\+Rect}{, }\item[{const QPoint \&}]{starting\+Point}{, }\item[{const QPoint \&}]{ending\+Point}{, }\item[{int}]{move\+Speed}{, }\item[{int}]{type}{}\end{DoxyParamCaption})}
+
+
+
+The constructor to create an \doxylink{class_enemy}{Enemy}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Rect,type} & QRect\& \+: the \doxylink{class_enemy}{Enemy} size and spawn coordinates \\
+\hline
+{\em starting\+Point,type} & QPoint\& \+: the starting point of the \doxylink{class_enemy}{Enemy}\textquotesingle{}s movement \\
+\hline
+{\em ending\+Point,type} & QPoint\& \+: the ending point of the \doxylink{class_enemy}{Enemy}\textquotesingle{}s movement \\
+\hline
+{\em move\+Speed,type} & int \+: the movement\textquotesingle{}s speed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_ac0eec4755e28c02688065f9657150ac3}\index{Enemy@{Enemy}!````~Enemy@{\texorpdfstring{$\sim$}{\string~}Enemy}}
+\index{````~Enemy@{\texorpdfstring{$\sim$}{\string~}Enemy}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Enemy()}{\string~Enemy()}}
+{\footnotesize\ttfamily \label{class_enemy_ac0eec4755e28c02688065f9657150ac3} 
+Enemy\+::\texorpdfstring{$\sim$}{\string~}\+Enemy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+The destructor to delete an \doxylink{class_enemy}{Enemy}. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+6 June 2024 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_enemy_af06be9c557993d7bc2a808c20865aeec}\index{Enemy@{Enemy}!getIsMovingToSecondPoint@{getIsMovingToSecondPoint}}
+\index{getIsMovingToSecondPoint@{getIsMovingToSecondPoint}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getIsMovingToSecondPoint()}{getIsMovingToSecondPoint()}}
+{\footnotesize\ttfamily \label{class_enemy_af06be9c557993d7bc2a808c20865aeec} 
+bool Enemy\+::get\+Is\+Moving\+To\+Second\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Moving\+To\+Second\+Point value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+is\+Moving\+To\+Second\+Point, type bool \+: the is\+Moving\+To\+Second\+Point value 
+\end{DoxyReturn}
+\Hypertarget{class_enemy_aa170a8225ede27fec7d6d9cbe194101a}\index{Enemy@{Enemy}!getItsCurrentFrame@{getItsCurrentFrame}}
+\index{getItsCurrentFrame@{getItsCurrentFrame}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getItsCurrentFrame()}{getItsCurrentFrame()}}
+{\footnotesize\ttfamily \label{class_enemy_aa170a8225ede27fec7d6d9cbe194101a} 
+\mbox{\hyperlink{struct_frame}{Frame}} \texorpdfstring{$\ast$}{*} Enemy\+::get\+Its\+Current\+Frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method gives access to the current frame of the enemy. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+8 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Current\+Frame, type QPixmap \+: the current frame of the enemy 
+\end{DoxyReturn}
+\Hypertarget{class_enemy_a6c6f4d521c877b9d22a33d4582198968}\index{Enemy@{Enemy}!getItsCurrentTarget@{getItsCurrentTarget}}
+\index{getItsCurrentTarget@{getItsCurrentTarget}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getItsCurrentTarget()}{getItsCurrentTarget()}}
+{\footnotesize\ttfamily \label{class_enemy_a6c6f4d521c877b9d22a33d4582198968} 
+QPoint Enemy\+::get\+Its\+Current\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Current\+Target coordinate. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Current\+Target, type QPoint \+: the its\+Current\+Target coordinate 
+\end{DoxyReturn}
+\Hypertarget{class_enemy_ae28423c0a40d64155c8f053b623f5ca3}\index{Enemy@{Enemy}!getItsFirstEndPoint@{getItsFirstEndPoint}}
+\index{getItsFirstEndPoint@{getItsFirstEndPoint}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getItsFirstEndPoint()}{getItsFirstEndPoint()}}
+{\footnotesize\ttfamily \label{class_enemy_ae28423c0a40d64155c8f053b623f5ca3} 
+QPoint Enemy\+::get\+Its\+First\+End\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+First\+End\+Point coordinate. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+First\+End\+Point, type QPoint \+: the its\+First\+End\+Point coordinate 
+\end{DoxyReturn}
+\Hypertarget{class_enemy_a9343a73034156db358804afa61ffaba4}\index{Enemy@{Enemy}!getItsRect@{getItsRect}}
+\index{getItsRect@{getItsRect}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getItsRect()}{getItsRect()}}
+{\footnotesize\ttfamily \label{class_enemy_a9343a73034156db358804afa61ffaba4} 
+QRect Enemy\+::get\+Its\+Rect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Rect value (its\+Rect represent the hitbox of the \doxylink{class_enemy}{Enemy}) 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Rect, type QRect \+: the hitbox of the \doxylink{class_enemy}{Enemy} 
+\end{DoxyReturn}
+\Hypertarget{class_enemy_ae4f9e5ba1fe5a0e8c39a3e2bce115aed}\index{Enemy@{Enemy}!getItsSecondEndPoint@{getItsSecondEndPoint}}
+\index{getItsSecondEndPoint@{getItsSecondEndPoint}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getItsSecondEndPoint()}{getItsSecondEndPoint()}}
+{\footnotesize\ttfamily \label{class_enemy_ae4f9e5ba1fe5a0e8c39a3e2bce115aed} 
+QPoint Enemy\+::get\+Its\+Second\+End\+Point (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Second\+End\+Point coordinate. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Second\+End\+Point, type QPoint \+: the its\+Second\+End\+Point coordinate 
+\end{DoxyReturn}
+\Hypertarget{class_enemy_a2b5952dbc4fbb47090667f2840b73d42}\index{Enemy@{Enemy}!getItsSpeed@{getItsSpeed}}
+\index{getItsSpeed@{getItsSpeed}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getItsSpeed()}{getItsSpeed()}}
+{\footnotesize\ttfamily \label{class_enemy_a2b5952dbc4fbb47090667f2840b73d42} 
+int Enemy\+::get\+Its\+Speed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+This method return the its\+Speed value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+\begin{DoxyReturn}{Returns}
+its\+Speed, type int \+: the its\+Speed value 
+\end{DoxyReturn}
+\Hypertarget{class_enemy_a68e39ce61b28db39a5da53b771fd05e3}\index{Enemy@{Enemy}!loadAnimation@{loadAnimation}}
+\index{loadAnimation@{loadAnimation}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{loadAnimation()}{loadAnimation()}}
+{\footnotesize\ttfamily \label{class_enemy_a68e39ce61b28db39a5da53b771fd05e3} 
+void Enemy\+::load\+Animation (\begin{DoxyParamCaption}\item[{QString}]{animation\+Name}{, }\item[{int}]{frame\+Number}{}\end{DoxyParamCaption})}
+
+
+
+This method load the images needed for the animations in a vector$<$\+Animation$>$ 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+8 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em animation\+Name,type} & QString \+: the name of the animation needed to find the images \\
+\hline
+{\em frame\+Number,type} & int \+: the number of frame this animation contains \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a4a3886bb1d92428baaeea3be5b4342fb}\index{Enemy@{Enemy}!moveTowards@{moveTowards}}
+\index{moveTowards@{moveTowards}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{moveTowards()}{moveTowards()}}
+{\footnotesize\ttfamily \label{class_enemy_a4a3886bb1d92428baaeea3be5b4342fb} 
+void Enemy\+::move\+Towards (\begin{DoxyParamCaption}\item[{const QPoint \&}]{target}{}\end{DoxyParamCaption})}
+
+
+
+This method make the \doxylink{class_enemy}{Enemy} move to a target (point) 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em target,type} & QPoint\& \+: the point where the \doxylink{class_enemy}{Enemy} is heading \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a366c24e50883973b07b0b67aea65a581}\index{Enemy@{Enemy}!playAnimation@{playAnimation}}
+\index{playAnimation@{playAnimation}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{playAnimation()}{playAnimation()}}
+{\footnotesize\ttfamily \label{class_enemy_a366c24e50883973b07b0b67aea65a581} 
+void Enemy\+::play\+Animation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+This method switch the current frame to the next one. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+8 June 2024 
+\end{DoxyDate}
+\Hypertarget{class_enemy_afdabd52c5273b17ab146312b1b6d5649}\index{Enemy@{Enemy}!setIsMovingToSecondPoint@{setIsMovingToSecondPoint}}
+\index{setIsMovingToSecondPoint@{setIsMovingToSecondPoint}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setIsMovingToSecondPoint()}{setIsMovingToSecondPoint()}}
+{\footnotesize\ttfamily \label{class_enemy_afdabd52c5273b17ab146312b1b6d5649} 
+void Enemy\+::set\+Is\+Moving\+To\+Second\+Point (\begin{DoxyParamCaption}\item[{bool}]{new\+Moving\+To\+Point2}{}\end{DoxyParamCaption})}
+
+
+
+This method change the its\+Moving\+To\+Second\+Point value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Moving\+To\+Point2,type} & bool \+: The its\+Moving\+To\+Second\+Point value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_ab46df26691c5e4b44dcc07bf02921635}\index{Enemy@{Enemy}!setItsCurrentFrame@{setItsCurrentFrame}}
+\index{setItsCurrentFrame@{setItsCurrentFrame}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setItsCurrentFrame()}{setItsCurrentFrame()}}
+{\footnotesize\ttfamily \label{class_enemy_ab46df26691c5e4b44dcc07bf02921635} 
+void Enemy\+::set\+Its\+Current\+Frame (\begin{DoxyParamCaption}\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+
+
+This method change the current animation. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+8 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em index,type} & int \+: the index of the animation wanted \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a4e5038b42f2e34101af13cdcf494befd}\index{Enemy@{Enemy}!setItsCurrentTarget@{setItsCurrentTarget}}
+\index{setItsCurrentTarget@{setItsCurrentTarget}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setItsCurrentTarget()}{setItsCurrentTarget()}}
+{\footnotesize\ttfamily \label{class_enemy_a4e5038b42f2e34101af13cdcf494befd} 
+void Enemy\+::set\+Its\+Current\+Target (\begin{DoxyParamCaption}\item[{const QPoint \&}]{a\+Target}{}\end{DoxyParamCaption})}
+
+
+
+This method change the its\+Current\+Target value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Target,type} & QPoint\& \+: The its\+Current\+Target coordinates \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_ad5c3f9575b16593e064b39a5f2a4fb24}\index{Enemy@{Enemy}!setItsFirstEndPoint@{setItsFirstEndPoint}}
+\index{setItsFirstEndPoint@{setItsFirstEndPoint}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setItsFirstEndPoint()}{setItsFirstEndPoint()}}
+{\footnotesize\ttfamily \label{class_enemy_ad5c3f9575b16593e064b39a5f2a4fb24} 
+void Enemy\+::set\+Its\+First\+End\+Point (\begin{DoxyParamCaption}\item[{const QPoint \&}]{a\+First\+End\+Point}{}\end{DoxyParamCaption})}
+
+
+
+This method change the its\+Firts\+End\+Point value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Firts\+End\+Point,type} & QPoint\& \+: The its\+First\+End\+Point coordinates \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a202c67fcf876e0c3660a22f52cb3895b}\index{Enemy@{Enemy}!setItsRect@{setItsRect}}
+\index{setItsRect@{setItsRect}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setItsRect()}{setItsRect()}}
+{\footnotesize\ttfamily \label{class_enemy_a202c67fcf876e0c3660a22f52cb3895b} 
+void Enemy\+::set\+Its\+Rect (\begin{DoxyParamCaption}\item[{const QRect \&}]{new\+Rect}{}\end{DoxyParamCaption})}
+
+
+
+This method change the value of the hitbox of the \doxylink{class_enemy}{Enemy}. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rect,type} & QRect\& \+: The hitbox value of the \doxylink{class_enemy}{Enemy} \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a23ab28b4df96c7fd3d06f7e16a82a332}\index{Enemy@{Enemy}!setItsSecondEndPoint@{setItsSecondEndPoint}}
+\index{setItsSecondEndPoint@{setItsSecondEndPoint}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setItsSecondEndPoint()}{setItsSecondEndPoint()}}
+{\footnotesize\ttfamily \label{class_enemy_a23ab28b4df96c7fd3d06f7e16a82a332} 
+void Enemy\+::set\+Its\+Second\+End\+Point (\begin{DoxyParamCaption}\item[{const QPoint \&}]{a\+Second\+End\+Point}{}\end{DoxyParamCaption})}
+
+
+
+This method change the value of the its\+Second\+End\+Point value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Second\+End\+Point,type} & QPoint\& \+: The its\+Second\+End\+Point coordinates \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a3e12d0a01126c100d877463ef06ac734}\index{Enemy@{Enemy}!setItsSpeed@{setItsSpeed}}
+\index{setItsSpeed@{setItsSpeed}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setItsSpeed()}{setItsSpeed()}}
+{\footnotesize\ttfamily \label{class_enemy_a3e12d0a01126c100d877463ef06ac734} 
+void Enemy\+::set\+Its\+Speed (\begin{DoxyParamCaption}\item[{int}]{new\+Speed}{}\end{DoxyParamCaption})}
+
+
+
+This method change the its\+Speed value. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Speed,type} & QPoint\& \+: The its\+Speed value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a504cd06a1331dda27556369a01949225}\index{Enemy@{Enemy}!updateEnemyRelativePosition@{updateEnemyRelativePosition}}
+\index{updateEnemyRelativePosition@{updateEnemyRelativePosition}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{updateEnemyRelativePosition()}{updateEnemyRelativePosition()}}
+{\footnotesize\ttfamily \label{class_enemy_a504cd06a1331dda27556369a01949225} 
+void Enemy\+::update\+Enemy\+Relative\+Position (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{bool}]{is\+Colliding}{}\end{DoxyParamCaption})}
+
+
+
+This method update the \doxylink{class_enemy}{Enemy} position in the game relative to player movement. 
+
+\begin{DoxyAuthor}{Author}
+GIGNOUX Victor 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+\begin{DoxyParams}{Parameters}
+{\em x,type} & int \+: The direction \\
+\hline
+{\em is\+Colliding,type} & bool \+: If the player collides with a platform \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_enemy_a43ef301c43078d09a142c1d342227e06}\index{Enemy@{Enemy}!updatePosition@{updatePosition}}
+\index{updatePosition@{updatePosition}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{updatePosition()}{updatePosition()}}
+{\footnotesize\ttfamily \label{class_enemy_a43ef301c43078d09a142c1d342227e06} 
+void Enemy\+::update\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+This method update the position of \doxylink{class_enemy}{Enemy} and check if he is on the starting/ending point. 
+
+\begin{DoxyAuthor}{Author}
+PARDOEN James 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+3 June 2024 
+\end{DoxyDate}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+App/enemy.\+h\item 
+App/enemy.\+cpp\end{DoxyCompactItemize}

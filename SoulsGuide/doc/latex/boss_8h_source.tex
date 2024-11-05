@@ -1,0 +1,49 @@
+\doxysection{boss.\+h}
+\hypertarget{boss_8h_source}{}\label{boss_8h_source}\index{App/boss.h@{App/boss.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BOSS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BOSS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}typeDef.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}player.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_boss}{Boss}}}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{int}\ itsHealthPoint;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ itsSpeed;}
+\DoxyCodeLine{00022\ \ \ \ \ QRect\ itsRect;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{int}\ itsIframes\ =\ 0;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//\ For\ the\ boss\ fight,\ default\ is\ false}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{comment}{//\ bool\ isKillable;\ à\ réflechir}}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_player}{Player}}\ *\ itsPlayer;}
+\DoxyCodeLine{00030\ \ \ \ \ QPixmap\ itsSprite;}
+\DoxyCodeLine{00032\ \ \ \ \ QRect\ itsHitbox;}
+\DoxyCodeLine{00033\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_boss_a6a6034e9d88ba56fd4d7c08129448f61}{Boss}}(\mbox{\hyperlink{class_player}{Player}}\ *\ aPlayer,\ QPoint\ spawnPoint,\ \textcolor{keywordtype}{int}\ bossWidth,\ \textcolor{keywordtype}{int}\ bossHeight,\ \textcolor{keywordtype}{int}\ speed);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_boss_ae2300fbed7e29873d66c5a89beb3a628}{\string~Boss}}();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{comment}{//\ All\ the\ setters}}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_boss_a29a62ff56a1deded82be0734aa524577}{setItsSpeed}}(\textcolor{keywordtype}{int}\ speed);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_boss_a7e490482373a34344d1e6c09dfef419d}{move}}();}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_boss_ac584361d823e9b85014a09b05529a40b}{updateBossRelativePosition}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{bool}\ isColliding);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ All\ the\ getters}}
+\DoxyCodeLine{00092\ \ \ \ \ QPoint\ \mbox{\hyperlink{class_boss_aa6324a9b05690902eaed7ccb8025ab47}{getItsPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_boss_aa5ca0a52710f103ac6ca0b40d1c4bf49}{getItsHealthPoint}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_boss_a93b463179004e4d4784ab48c0e812268}{setItsHealthPoint}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ newHp);}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_boss_a74dcb54106e6c1c7648ec27fc95ded7e}{getItsIframes}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_boss_acd06b38df216076a8967b23353c6a1a6}{setItsIframes}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ newVal);}
+\DoxyCodeLine{00133\ \ \ \ \ QRect\ \mbox{\hyperlink{class_boss_a99e154b3d16cbb519dbe8f401cd5f688}{getItsRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00141\ \ \ \ \ QPixmap\ \mbox{\hyperlink{class_boss_ac9bb409e93c82c17d44c7b1ce03834ee}{getItsSprite}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00149\ \ \ \ \ QRect\ \mbox{\hyperlink{class_boss_afa2fa1d1c1fa637a7d8f245e41c7e37d}{getItsHitbox}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_boss_abe6944df79e66e8a9ffcf48f092e9411}{setItsHitbox}}(QRect\ newHitbox);}
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_boss_a7721befc776a159721db1adb34c69de7}{bossFightMove}}(QPoint\ aPosition);}
+\DoxyCodeLine{00168\ \};}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00170\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ BOSS\_H}}
+
+\end{DoxyCode}
